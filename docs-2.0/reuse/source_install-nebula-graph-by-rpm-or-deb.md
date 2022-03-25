@@ -101,7 +101,7 @@ Prepare the right [resources](https://docs.nebula-graph.io/{{nebula.release}}/4.
 * Download the release version.
 
    + On the [Nebula Graph Releases](https://github.com/vesoft-inc/nebula-graph/releases) page, find the required version and click **Assets**.
-   ![Select a Nebula Graph release version](../reuse/console-1.png)
+   ![Select a Nebula Graph release version](https://docs-cdn.nebula-graph.com.cn/figures/console-1.png)
 
    + In the **Assets** area, click the package to download it.
 
@@ -126,7 +126,9 @@ Prepare the right [resources](https://docs.nebula-graph.io/{{nebula.release}}/4.
   $ sudo rpm -ivh --prefix=<installation_path> <package_name>
   ```
 
-  For example, to install an RPM package in the default path for the {{nebula.release}} version.
+  The option `--prefix` indicates the installation path. The default path is `/usr/local/nebula/`.
+
+  For example, to install an RPM package in the default path for the {{nebula.release}} version, run the following command.
 
   ```bash
   sudo rpm -ivh nebula-graph-{{nebula.release}}.el7.x86_64.rpm
@@ -135,10 +137,13 @@ Prepare the right [resources](https://docs.nebula-graph.io/{{nebula.release}}/4.
 * Use the following syntax to install with a DEB package.
 
   ```bash
-  $ sudo dpkg -i --instdir==<installation_path> <package_name>
+  $ sudo dpkg -i <package_name>
   ```
 
-  For example, to install a DEB package in the default path for the {{nebula.release}} version.
+  !!! note
+        Customizing the installation path is not supported when installing Nebula Graph with a DEB package. The default installation path is `/usr/local/nebula/`.
+
+  For example, to install a DEB package for the {{nebula.release}} version, run the following command.
 
   ```bash
   sudo dpkg -i nebula-graph-{{nebula.release}}.ubuntu1804.amd64.deb

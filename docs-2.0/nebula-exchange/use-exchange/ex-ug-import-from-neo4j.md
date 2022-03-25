@@ -20,7 +20,7 @@ At this point, Exchange has finished exporting the Neo4j data. The data is then 
 
 The whole process is illustrated below.
 
-![Nebula Graph&reg; Exchange exports data from the Neo4j database and imports it into the Nebula Graph database in parallel](../figs/ex-ug-002.png "Nebula Graph&reg; Exchange migrates Neo4j data")
+![Nebula Graph&reg; Exchange exports data from the Neo4j database and imports it into the Nebula Graph database in parallel](https://docs-cdn.nebula-graph.com.cn/figures/ex-ug-002.png "Nebula Graph&reg; Exchange migrates Neo4j data")
 
 ## Data set
 
@@ -126,7 +126,7 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
         memory:1G
     }
 
-    cores:{
+    cores: {
       max: 16
     }
   }
@@ -142,12 +142,12 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
     pswd: nebula
     space: basketballplayer
 
-    connection {
+    connection: {
       timeout: 3000
       retry: 3
     }
 
-    execution {
+    execution: {
       retry: 3
     }
 

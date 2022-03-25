@@ -1,7 +1,7 @@
-# Import data from MySQL
+# Import data from MySQL/PostgreSQL
 
-This topic provides an example of how to use Exchange to import Nebula Graph data stored in MySQL.
-
+This topic provides an example of how to use Exchange to export MySQL data and import to Nebula Graph. It also applies to exporting
+data from PostgreSQL into Nebula Graph.
 ## Data set
 
 This topic takes the [basketballplayer dataset](https://docs-cdn.nebula-graph.com.cn/dataset/dataset.zip) as an example.
@@ -137,7 +137,7 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
       cores: 1
       maxResultSize: 1G
     }
-    cores {
+    cores: {
       max: 16
     }
   }
@@ -156,11 +156,11 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
     pswd: nebula
     # Fill in the name of the graph space you want to write data to in the Nebula Graph.
     space: basketballplayer
-    connection {
+    connection: {
       timeout: 3000
       retry: 3
     }
-    execution {
+    execution: {
       retry: 3
     }
     error: {
@@ -276,6 +276,9 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
       target: {
         field: dst_player
       }
+
+      # (Optional) Specify a column as the source of the rank.
+      #ranking: rank
 
       # The number of data written to Nebula Graph in a single batch.
       batch: 256

@@ -167,7 +167,7 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
       cores: 1
       maxResultSize: 1G
     }
-    cores {
+    cores: {
       max: 16
     }
   }
@@ -195,11 +195,11 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
     pswd: nebula
     # Fill in the name of the graph space you want to write data to in the Nebula Graph.
     space: basketballplayer
-    connection {
+    connection: {
       timeout: 3000
       retry: 3
     }
-    execution {
+    execution: {
       retry: 3
     }
     error: {
@@ -298,6 +298,9 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
         field: dst_player
       }
 
+      # (Optional) Specify a column as the source of the rank.
+      #ranking: rank
+
       # The number of data written to Nebula Graph in a single batch.
       batch: 256
 
@@ -321,6 +324,10 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
       target: {
         field: teamid
       }
+
+      # (Optional) Specify a column as the source of the rank.
+      #ranking: rank
+
       batch: 256
       partition: 32
     }
