@@ -17,15 +17,11 @@ theme:
     logo: 'https://cloud-cdn.nebula-graph.com.cn/vesoft-nebula-logo-white.png'
     favicon: 'assets/images/favicon.ico'
     palette:
-      - scheme: default
-        primary: teal
-        accent: green
+      - scheme: nebula
         toggle:
           icon: material/toggle-switch-off-outline
           name: Switch to dark mode
       - scheme: slate
-        primary: deep orange
-        accent: red
         toggle:
           icon: material/toggle-switch
           name: Switch to light mode
@@ -162,6 +158,8 @@ extra:
     release: 3.1.0
     branch: release-3.1
     tag: v3.1.0
+  dag:
+    release: 1.0.0
   sparkconnector:
     release: 3.0.0
     branch: v3.0.0
@@ -298,6 +296,7 @@ nav:
           - Conditional expressions: 3.ngql-guide/6.functions-and-expressions/5.conditional-expressions.md
           - Predicate functions: 3.ngql-guide/6.functions-and-expressions/8.predicate.md
           - Geography functions: 3.ngql-guide/6.functions-and-expressions/14.geo.md
+         - Elasticsearch functions: 3.ngql-guide/6.functions-and-expressions/17.ES-function.md
           - User-defined functions: 3.ngql-guide/6.functions-and-expressions/9.user-defined-functions.md
 
       - General queries statements:
@@ -536,9 +535,11 @@ nav:
         - Cluster operations: nebula-dashboard-ent/4.cluster-operator/4.manage.md
         - Operation records: nebula-dashboard-ent/4.cluster-operator/5.operation-record.md
         - Other settings: nebula-dashboard-ent/4.cluster-operator/6.settings.md
-      - Authority management: nebula-dashboard-ent/5.account-management.md
-      - Global settings: nebula-dashboard-ent/6.global-config.md
       - Task Center: nebula-dashboard-ent/10.tasks.md
+      - Authority management: nebula-dashboard-ent/5.account-management.md
+      - Package management: nebula-dashboard-ent/11.manage-package.md
+      - Global settings: nebula-dashboard-ent/6.global-config.md
+
       - Monitoring metrics: nebula-dashboard-ent/7.monitor-parameter.md
       - FAQ: nebula-dashboard-ent/8.faq.md
 
@@ -609,9 +610,17 @@ nav:
       - Self-healing: nebula-operator/5.operator-failover.md
       - FAQ: nebula-operator/7.operator-faq.md
 
-  - Nebula Algorithm: nebula-algorithm.md
+  - Graph computing:
 
-  - Nebula Analytics: nebula-analytics.md
+    - Algorithm overview: graph-computing/algorithm-description.md
+
+    - Nebula Algorithm: graph-computing/nebula-algorithm.md
+
+    - Nebula Analytics: graph-computing/nebula-analytics.md
+
+    - Nebula Explorer workflow: graph-computing/use-explorer.md
+    
+    - Dag Controller: graph-computing/0.deploy-controller-analytics.md
 
   - Nebula Spark Connector: nebula-spark-connector.md
 
