@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.nebula-graph.io/master/3.ngql-guide/6.functions-and-expressions/6.list/">
       
       <link rel="icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.7">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
@@ -23,11 +23,12 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d5733d3.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
         
+      
       
     
     
@@ -45,9 +46,9 @@
     
       <link rel="stylesheet" href="../../../stylesheets/note.css">
     
-      <link rel="stylesheet" href="../../../css/version-select.css">
-    
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../css/version-select.css">
     
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -113,7 +114,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -148,16 +149,36 @@
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
             </label>
           
         
       </form>
     
     
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="https://docs.nebula-graph.com.cn/" hreflang="zh" class="md-select__link">
+                    中文
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -165,13 +186,13 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -191,7 +212,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/vesoft-inc/nebula-docs/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/vesoft-inc/nebula-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -235,7 +256,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/vesoft-inc/nebula-docs/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/vesoft-inc/nebula-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -1204,6 +1225,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../15.aggregating/" class="md-nav__link">
+        Aggregate functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../2.string/" class="md-nav__link">
         String functions
       </a>
@@ -1234,20 +1269,6 @@
     <li class="md-nav__item">
       <a href="../4.schema/" class="md-nav__link">
         Schema functions
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../5.case-expressions/" class="md-nav__link">
-        Case expressions
       </a>
     </li>
   
@@ -1294,9 +1315,132 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
+  <a href="#precautions" class="md-nav__link">
+    Precautions
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    General
+  </a>
+  
+    <nav class="md-nav" aria-label="General">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#range" class="md-nav__link">
+    range()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverse" class="md-nav__link">
+    reverse()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tail" class="md-nav__link">
+    tail()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head" class="md-nav__link">
+    head()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last" class="md-nav__link">
+    last()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reduce" class="md-nav__link">
+    reduce()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for_ngql_statements" class="md-nav__link">
+    For nGQL statements
+  </a>
+  
+    <nav class="md-nav" aria-label="For nGQL statements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keys" class="md-nav__link">
+    keys()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#labels" class="md-nav__link">
+    labels()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for_statements_compatible_with_opencypher" class="md-nav__link">
+    For statements compatible with openCypher
+  </a>
+  
+    <nav class="md-nav" aria-label="For statements compatible with openCypher">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keys_1" class="md-nav__link">
+    keys()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#labels_1" class="md-nav__link">
+    labels()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodes" class="md-nav__link">
+    nodes()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relationships" class="md-nav__link">
+    relationships()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1315,8 +1459,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../7.count/" class="md-nav__link">
-        count()
+      <a href="../16.type-conversion/" class="md-nav__link">
+        Type conversion functions
       </a>
     </li>
   
@@ -1329,50 +1473,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../10.collect/" class="md-nav__link">
-        collect()
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../11.reduce/" class="md-nav__link">
-        reduce()
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../12.hash/" class="md-nav__link">
-        hash()
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../13.concat/" class="md-nav__link">
-        concat()
+      <a href="../5.conditional-expressions/" class="md-nav__link">
+        Conditional expressions
       </a>
     </li>
   
@@ -3018,6 +3120,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.deployment-and-installation/2.compile-and-install-nebula-graph/6.deploy-nebula-graph-with-peripherals/" class="md-nav__link">
+        Deploy Nebula Grpah with ecosystem tools
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -3046,7 +3162,7 @@
   
     <li class="md-nav__item">
       <a href="../../../4.deployment-and-installation/deploy-license/" class="md-nav__link">
-        Deploy license
+        Deploy licenses for Nebula Graph Enterprise Edition clusters
       </a>
     </li>
   
@@ -4015,24 +4131,39 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../nebula-cloud/" class="md-nav__link">
+        Nebula Graph Cloud
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_13">
-          Nebula Graph Studio
+        <label class="md-nav__link" for="__nav_14">
+          Nebula Studio
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Nebula Graph Studio" data-md-level="1">
-        <label class="md-nav__title" for="__nav_13">
+      <nav class="md-nav" aria-label="Nebula Studio" data-md-level="1">
+        <label class="md-nav__title" for="__nav_14">
           <span class="md-nav__icon md-icon"></span>
-          Nebula Graph Studio
+          Nebula Studio
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -4059,20 +4190,20 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_2" type="checkbox" id="__nav_13_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_2" type="checkbox" id="__nav_14_2" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_13_2">
-          About Nebula Graph Studio
+        <label class="md-nav__link" for="__nav_14_2">
+          About Nebula Studio
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="About Nebula Graph Studio" data-md-level="2">
-        <label class="md-nav__title" for="__nav_13_2">
+      <nav class="md-nav" aria-label="About Nebula Studio" data-md-level="2">
+        <label class="md-nav__title" for="__nav_14_2">
           <span class="md-nav__icon md-icon"></span>
-          About Nebula Graph Studio
+          About Nebula Studio
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -4083,7 +4214,7 @@
   
     <li class="md-nav__item">
       <a href="../../../nebula-studio/about-studio/st-ug-what-is-graph-studio/" class="md-nav__link">
-        What is Nebula Graph Studio
+        What is Nebula Studio
       </a>
     </li>
   
@@ -4120,18 +4251,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_3" type="checkbox" id="__nav_13_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_3" type="checkbox" id="__nav_14_3" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_13_3">
+        <label class="md-nav__link" for="__nav_14_3">
           Deploy and connect
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Deploy and connect" data-md-level="2">
-        <label class="md-nav__title" for="__nav_13_3">
+        <label class="md-nav__title" for="__nav_14_3">
           <span class="md-nav__icon md-icon"></span>
           Deploy and connect
         </label>
@@ -4195,18 +4326,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_4" type="checkbox" id="__nav_13_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_4" type="checkbox" id="__nav_14_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_13_4">
+        <label class="md-nav__link" for="__nav_14_4">
           Quick start
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Quick start" data-md-level="2">
-        <label class="md-nav__title" for="__nav_13_4">
+        <label class="md-nav__title" for="__nav_14_4">
           <span class="md-nav__icon md-icon"></span>
           Quick start
         </label>
@@ -4277,18 +4408,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_4_5" type="checkbox" id="__nav_13_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_4_5" type="checkbox" id="__nav_14_4_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_13_4_5">
+        <label class="md-nav__link" for="__nav_14_4_5">
           Use Schema
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Use Schema" data-md-level="3">
-        <label class="md-nav__title" for="__nav_13_4_5">
+        <label class="md-nav__title" for="__nav_14_4_5">
           <span class="md-nav__icon md-icon"></span>
           Use Schema
         </label>
@@ -4373,18 +4504,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_5" type="checkbox" id="__nav_13_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_5" type="checkbox" id="__nav_14_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_13_5">
+        <label class="md-nav__link" for="__nav_14_5">
           Troubleshooting
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Troubleshooting" data-md-level="2">
-        <label class="md-nav__title" for="__nav_13_5">
+        <label class="md-nav__title" for="__nav_14_5">
           <span class="md-nav__icon md-icon"></span>
           Troubleshooting
         </label>
@@ -4456,18 +4587,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_14">
+        <label class="md-nav__link" for="__nav_15">
           Nebula Dashboard Community Edition
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Nebula Dashboard Community Edition" data-md-level="1">
-        <label class="md-nav__title" for="__nav_14">
+        <label class="md-nav__title" for="__nav_15">
           <span class="md-nav__icon md-icon"></span>
           Nebula Dashboard Community Edition
         </label>
@@ -4560,18 +4691,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_15">
+        <label class="md-nav__link" for="__nav_16">
           Nebula Dashboard Enterprise Edition
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Nebula Dashboard Enterprise Edition" data-md-level="1">
-        <label class="md-nav__title" for="__nav_15">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           Nebula Dashboard Enterprise Edition
         </label>
@@ -4584,7 +4715,7 @@
   
     <li class="md-nav__item">
       <a href="../../../nebula-dashboard-ent/1.what-is-dashboard-ent/" class="md-nav__link">
-        What is Nebula Dashboard
+        What is Nebula Dashboard Enterprise Edition
       </a>
     </li>
   
@@ -4598,7 +4729,21 @@
   
     <li class="md-nav__item">
       <a href="../../../nebula-dashboard-ent/2.deploy-connect-dashboard-ent/" class="md-nav__link">
-        Deploy Dashboard
+        Deploy Dashboard Enterprise Edition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nebula-dashboard-ent/11.dashboard-ent-license/" class="md-nav__link">
+        Nebula Dashboard Enterprise Edition license
       </a>
     </li>
   
@@ -4614,18 +4759,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_3" type="checkbox" id="__nav_15_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4" type="checkbox" id="__nav_16_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_15_3">
+        <label class="md-nav__link" for="__nav_16_4">
           Create and import clusters
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Create and import clusters" data-md-level="2">
-        <label class="md-nav__title" for="__nav_15_3">
+        <label class="md-nav__title" for="__nav_16_4">
           <span class="md-nav__icon md-icon"></span>
           Create and import clusters
         </label>
@@ -4675,18 +4820,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4" type="checkbox" id="__nav_15_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_5" type="checkbox" id="__nav_16_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_15_4">
+        <label class="md-nav__link" for="__nav_16_5">
           Cluster management
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Cluster management" data-md-level="2">
-        <label class="md-nav__title" for="__nav_15_4">
+        <label class="md-nav__title" for="__nav_16_5">
           <span class="md-nav__icon md-icon"></span>
           Cluster management
         </label>
@@ -4898,18 +5043,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" type="checkbox" id="__nav_17" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_16">
+        <label class="md-nav__link" for="__nav_17">
           Nebula Explorer
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Nebula Explorer" data-md-level="1">
-        <label class="md-nav__title" for="__nav_16">
+        <label class="md-nav__title" for="__nav_17">
           <span class="md-nav__icon md-icon"></span>
           Nebula Explorer
         </label>
@@ -4938,18 +5083,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_2" type="checkbox" id="__nav_16_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17_2" type="checkbox" id="__nav_17_2" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_16_2">
+        <label class="md-nav__link" for="__nav_17_2">
           Deploy and connect
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Deploy and connect" data-md-level="2">
-        <label class="md-nav__title" for="__nav_16_2">
+        <label class="md-nav__title" for="__nav_17_2">
           <span class="md-nav__icon md-icon"></span>
           Deploy and connect
         </label>
@@ -4977,6 +5122,20 @@
     <li class="md-nav__item">
       <a href="../../../nebula-explorer/deploy-connect/ex-ug-connect/" class="md-nav__link">
         Connect to Nebula Graph
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nebula-explorer/deploy-connect/3.explorer-license/" class="md-nav__link">
+        Nebula Explorer License
       </a>
     </li>
   
@@ -5111,18 +5270,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_11" type="checkbox" id="__nav_16_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17_11" type="checkbox" id="__nav_17_11" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_16_11">
+        <label class="md-nav__link" for="__nav_17_11">
           Canvas
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Canvas" data-md-level="2">
-        <label class="md-nav__title" for="__nav_16_11">
+        <label class="md-nav__title" for="__nav_17_11">
           <span class="md-nav__icon md-icon"></span>
           Canvas
         </label>
@@ -5222,18 +5381,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" type="checkbox" id="__nav_17" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18" type="checkbox" id="__nav_18" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_17">
+        <label class="md-nav__link" for="__nav_18">
           Nebula Importer
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Nebula Importer" data-md-level="1">
-        <label class="md-nav__title" for="__nav_17">
+        <label class="md-nav__title" for="__nav_18">
           <span class="md-nav__icon md-icon"></span>
           Nebula Importer
         </label>
@@ -5298,18 +5457,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18" type="checkbox" id="__nav_18" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19" type="checkbox" id="__nav_19" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_18">
+        <label class="md-nav__link" for="__nav_19">
           Nebula Exchange
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Nebula Exchange" data-md-level="1">
-        <label class="md-nav__title" for="__nav_18">
+        <label class="md-nav__title" for="__nav_19">
           <span class="md-nav__icon md-icon"></span>
           Nebula Exchange
         </label>
@@ -5324,18 +5483,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18_1" type="checkbox" id="__nav_18_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19_1" type="checkbox" id="__nav_19_1" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_18_1">
+        <label class="md-nav__link" for="__nav_19_1">
           Introduction
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Introduction" data-md-level="2">
-        <label class="md-nav__title" for="__nav_18_1">
+        <label class="md-nav__title" for="__nav_19_1">
           <span class="md-nav__icon md-icon"></span>
           Introduction
         </label>
@@ -5399,18 +5558,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18_3" type="checkbox" id="__nav_18_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19_3" type="checkbox" id="__nav_19_3" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_18_3">
+        <label class="md-nav__link" for="__nav_19_3">
           Exchange configurations
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Exchange configurations" data-md-level="2">
-        <label class="md-nav__title" for="__nav_18_3">
+        <label class="md-nav__title" for="__nav_19_3">
           <span class="md-nav__icon md-icon"></span>
           Exchange configurations
         </label>
@@ -5460,18 +5619,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18_4" type="checkbox" id="__nav_18_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19_4" type="checkbox" id="__nav_19_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_18_4">
+        <label class="md-nav__link" for="__nav_19_4">
           Use Nebula Exchange
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Use Nebula Exchange" data-md-level="2">
-        <label class="md-nav__title" for="__nav_18_4">
+        <label class="md-nav__title" for="__nav_19_4">
           <span class="md-nav__icon md-icon"></span>
           Use Nebula Exchange
         </label>
@@ -5711,18 +5870,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19" type="checkbox" id="__nav_19" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_20" type="checkbox" id="__nav_20" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_19">
+        <label class="md-nav__link" for="__nav_20">
           Nebula Operator
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Nebula Operator" data-md-level="1">
-        <label class="md-nav__title" for="__nav_19">
+        <label class="md-nav__title" for="__nav_20">
           <span class="md-nav__icon md-icon"></span>
           Nebula Operator
         </label>
@@ -5779,18 +5938,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19_4" type="checkbox" id="__nav_19_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_20_4" type="checkbox" id="__nav_20_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_19_4">
+        <label class="md-nav__link" for="__nav_20_4">
           Deploy clusters
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Deploy clusters" data-md-level="2">
-        <label class="md-nav__title" for="__nav_19_4">
+        <label class="md-nav__title" for="__nav_20_4">
           <span class="md-nav__icon md-icon"></span>
           Deploy clusters
         </label>
@@ -5840,18 +5999,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19_5" type="checkbox" id="__nav_19_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_20_5" type="checkbox" id="__nav_20_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_19_5">
+        <label class="md-nav__link" for="__nav_20_5">
           Configure clusters
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Configure clusters" data-md-level="2">
-        <label class="md-nav__title" for="__nav_19_5">
+        <label class="md-nav__title" for="__nav_20_5">
           <span class="md-nav__icon md-icon"></span>
           Configure clusters
         </label>
@@ -6054,22 +6213,36 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_25" type="checkbox" id="__nav_25" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_26" type="checkbox" id="__nav_26" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_25">
+        <label class="md-nav__link" for="__nav_26">
           Appendix
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Appendix" data-md-level="1">
-        <label class="md-nav__title" for="__nav_25">
+        <label class="md-nav__title" for="__nav_26">
           <span class="md-nav__icon md-icon"></span>
           Appendix
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../20.appendix/release-note/" class="md-nav__link">
+        Release Note
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -6091,8 +6264,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../20.appendix/releasenote/" class="md-nav__link">
-        Release Note
+      <a href="../../../20.appendix/8.about-license/" class="md-nav__link">
+        About Nebula Graph licenses
       </a>
     </li>
   
@@ -6197,21 +6370,6 @@
   
   
     <li class="md-nav__item">
-      <a href="https://docs.nebula-graph.com.cn/" class="md-nav__link">
-        中文手册
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../pdf/NebulaGraph-EN.pdf" class="md-nav__link">
         PDF
       </a>
@@ -6246,9 +6404,132 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
+  <a href="#precautions" class="md-nav__link">
+    Precautions
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    General
+  </a>
+  
+    <nav class="md-nav" aria-label="General">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#range" class="md-nav__link">
+    range()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverse" class="md-nav__link">
+    reverse()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tail" class="md-nav__link">
+    tail()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head" class="md-nav__link">
+    head()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last" class="md-nav__link">
+    last()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reduce" class="md-nav__link">
+    reduce()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for_ngql_statements" class="md-nav__link">
+    For nGQL statements
+  </a>
+  
+    <nav class="md-nav" aria-label="For nGQL statements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keys" class="md-nav__link">
+    keys()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#labels" class="md-nav__link">
+    labels()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for_statements_compatible_with_opencypher" class="md-nav__link">
+    For statements compatible with openCypher
+  </a>
+  
+    <nav class="md-nav" aria-label="For statements compatible with openCypher">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keys_1" class="md-nav__link">
+    keys()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#labels_1" class="md-nav__link">
+    labels()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodes" class="md-nav__link">
+    nodes()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relationships" class="md-nav__link">
+    relationships()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -6264,109 +6545,260 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/vesoft-inc/nebula-docs/edit/master/docs-2.0/3.ngql-guide/6.functions-and-expressions/6.list.md" title="Edit this page" class="md-content__button md-icon">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-</a>
+  <a href="https://github.com/vesoft-inc/nebula-docs/edit/master/docs-2.0/3.ngql-guide/6.functions-and-expressions/6.list.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
 
 
 
 <h1 id="list_functions">List functions<a class="headerlink" href="#list_functions" title="Permanent link">&para;</a></h1>
-<p>Nebula Graph supports the following list functions:</p>
-<table>
-<thead>
-<tr>
-<th>Function</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>keys(expr)</td>
-<td>Returns a list containing the string representations for all the property names of vertices, edges, or maps.</td>
-</tr>
-<tr>
-<td>labels(vertex)</td>
-<td>Returns the list containing all the tags of a vertex.</td>
-</tr>
-<tr>
-<td>nodes(path)</td>
-<td>Returns the list containing all the vertices in a path.</td>
-</tr>
-<tr>
-<td>range(start, end [, step])</td>
-<td>Returns the list containing all the fixed-length steps in <code>[start,end]</code>. <code>step</code> is 1 by default.</td>
-</tr>
-<tr>
-<td>relationships(path)</td>
-<td>Returns the list containing all the relationships in a path.</td>
-</tr>
-<tr>
-<td>reverse(list)</td>
-<td>Returns the list reversing the order of all elements in the original list.</td>
-</tr>
-<tr>
-<td>tail(list)</td>
-<td>Returns all the elements of the original list, excluding the first one.</td>
-</tr>
-<tr>
-<td>head(list)</td>
-<td>Returns the first element of a list.</td>
-</tr>
-<tr>
-<td>last(list)</td>
-<td>Returns the last element of a list.</td>
-</tr>
-<tr>
-<td>coalesce(list)</td>
-<td>Returns the first not null value in a list.</td>
-</tr>
-<tr>
-<td>reduce()</td>
-<td>See <a href="../11.reduce/">reduce() function</a>.</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If the argument is <code>NULL</code>, the output is undefined.</p>
-</div>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<p>This topic describes the list functions supported by Nebula Graph. Some of the functions have different syntax in native nGQL statements and openCypher-compatible statements.</p>
+<h2 id="precautions">Precautions<a class="headerlink" href="#precautions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Like SQL, the position index in nGQL starts from <code>1</code>, while in the C language it starts from <code>0</code>.</li>
+</ul>
+<ul>
+<li>If the argument is <code>NULL</code>, the output is undefined.</li>
+</ul>
+<h2 id="general">General<a class="headerlink" href="#general" title="Permanent link">&para;</a></h2>
+<h3 id="range">range()<a class="headerlink" href="#range" title="Permanent link">&para;</a></h3>
+<p>range() returns the list containing all the fixed-length steps in <code>[start,end]</code>.</p>
+<p>Syntax: <code>range(start, end [, step])</code></p>
+<ul>
+<li><code>step</code>: Optional parameters. <code>step</code> is 1 by default.</li>
+</ul>
+<ul>
+<li>Result type: List</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; RETURN range(1,9,2);
++-----------------+
+| range(1,9,2)    |
++-----------------+
+| [1, 3, 5, 7, 9] |
++-----------------+
+</code></pre></div>
+<h3 id="reverse">reverse()<a class="headerlink" href="#reverse" title="Permanent link">&para;</a></h3>
+<p>reverse() returns the list reversing the order of all elements in the original list.</p>
+<p>Syntax: <code>reverse(&lt;list&gt;)</code></p>
+<ul>
+<li>Result type: List</li>
+</ul>
+<p>Example:</p>
 <div class="highlight"><pre><span></span><code>nebula&gt; WITH [NULL, 4923, &#39;abc&#39;, 521, 487] AS ids \
-        RETURN reverse(ids), tail(ids), head(ids), last(ids), coalesce(ids);
-+-----------------------------------+-------------------------+-----------+-----------+---------------+
-| reverse(ids)                      | tail(ids)               | head(ids) | last(ids) | coalesce(ids) |
-+-----------------------------------+-------------------------+-----------+-----------+---------------+
-| [487, 521, &quot;abc&quot;, 4923, __NULL__] | [4923, &quot;abc&quot;, 521, 487] | __NULL__  | 487       | 4923          |
-+-----------------------------------+-------------------------+-----------+-----------+---------------+
+        RETURN reverse(ids);
++-----------------------------------+
+| reverse(ids)                      |
++-----------------------------------+
+| [487, 521, &quot;abc&quot;, 4923, __NULL__] |
++-----------------------------------+
+</code></pre></div>
+<h3 id="tail">tail()<a class="headerlink" href="#tail" title="Permanent link">&para;</a></h3>
+<p>tail() returns all the elements of the original list, excluding the first one.</p>
+<p>Syntax: <code>tail(&lt;list&gt;)</code></p>
+<ul>
+<li>Result type: List</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; WITH [NULL, 4923, &#39;abc&#39;, 521, 487] AS ids \
+        RETURN tail(ids);
++-------------------------+
+| tail(ids)               |
++-------------------------+
+| [4923, &quot;abc&quot;, 521, 487] |
++-------------------------+
+</code></pre></div>
+<h3 id="head">head()<a class="headerlink" href="#head" title="Permanent link">&para;</a></h3>
+<p>head() returns the first element of a list.</p>
+<p>Syntax: <code>head(&lt;list&gt;)</code></p>
+<ul>
+<li>Result type: Same as the element in the original list.</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; WITH [NULL, 4923, &#39;abc&#39;, 521, 487] AS ids \
+        RETURN head(ids);
++-----------+
+| head(ids) |
++-----------+
+| __NULL__  |
++-----------+
+</code></pre></div>
+<h3 id="last">last()<a class="headerlink" href="#last" title="Permanent link">&para;</a></h3>
+<p>last() returns the last element of a list.</p>
+<p>Syntax: <code>last(&lt;list&gt;)</code></p>
+<ul>
+<li>Result type: Same as the element in the original list.</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; WITH [NULL, 4923, &#39;abc&#39;, 521, 487] AS ids \
+        RETURN last(ids);
++-----------+
+| last(ids) |
++-----------+
+| 487       |
++-----------+
+</code></pre></div>
+<h3 id="reduce">reduce()<a class="headerlink" href="#reduce" title="Permanent link">&para;</a></h3>
+<p>reduce() applies an expression to each element in a list one by one, chains the result to the next iteration by taking it as the initial value, and returns the final result. This function iterates each element <code>e</code> in the given list, runs the expression on <code>e</code>, accumulates the result with the initial value, and store the new result in the accumulator as the initial value of the next iteration. It works like the fold or reduce method in functional languages such as Lisp and Scala.</p>
+<div class="admonition compatibility">
+<p class="admonition-title">openCypher compatibility</p>
+<p>In openCypher, the <code>reduce()</code> function is not defined. nGQL will implement the <code>reduce()</code> function in the Cypher way.</p>
+</div>
+<p>Syntax: <code>reduce(&lt;accumulator&gt; = &lt;initial&gt;, &lt;variable&gt; IN &lt;list&gt; | &lt;expression&gt;)</code></p>
+<ul>
+<li><code>accumulator</code>: A variable that will hold the accumulated results as the list is iterated.</li>
+</ul>
+<ul>
+<li><code>initial</code>: An expression that runs once to give an initial value to the <code>accumulator</code>.</li>
+</ul>
+<ul>
+<li><code>variable</code>: A variable in the list that will be applied to the expression successively.</li>
+</ul>
+<ul>
+<li><code>list</code>: A list or a list of expressions.</li>
+</ul>
+<ul>
+<li><code>expression</code>: This expression will be run on each element in the list once and store the result value in the <code>accumulator</code>.</li>
+</ul>
+<ul>
+<li>Result type: Depends on the parameters provided, along with the semantics of the expression.</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; RETURN reduce(totalNum = -4 * 5, n IN [1, 2] | totalNum + n * 2) AS r;
++-----+
+| r   |
++-----+
+| -14 |
++-----+
 
-nebula&gt; MATCH (a:player)-[r]-&gt;() \
-        WHERE id(a) == &quot;player100&quot; \
-        RETURN labels(a),  keys(r);
-+------------+----------------------------+
-| labels(a)  | keys(r)                    |
-+------------+----------------------------+
-| [&quot;player&quot;] | [&quot;degree&quot;]                 |
-| [&quot;player&quot;] | [&quot;degree&quot;]                 |
-| [&quot;player&quot;] | [&quot;end_year&quot;, &quot;start_year&quot;] |
-+------------+----------------------------+
+nebula&gt; MATCH p = (n:player{name:&quot;LeBron James&quot;})&lt;-[:follow]-(m) \
+        RETURN  nodes(p)[0].age AS src1,  nodes(p)[1].age AS dst2,  \
+        reduce(totalAge = 100, n IN nodes(p) | totalAge + n.age) AS sum;
++------+------+-----+
+| src1 | dst2 | sum |
++------+------+-----+
+| 34   | 31   | 165 |
+| 34   | 29   | 163 |
+| 34   | 33   | 167 |
+| 34   | 26   | 160 |
+| 34   | 34   | 168 |
+| 34   | 37   | 171 |
++------+------+-----+
 
-nebula&gt; MATCH p = (a:player)-[]-&gt;(b)-[]-&gt;(c:team) \
-        WHERE a.player.name == &quot;Tim Duncan&quot; AND c.team.name == &quot;Spurs&quot; \
+nebula&gt; LOOKUP ON player WHERE player.name == &quot;Tony Parker&quot; YIELD id(vertex) AS VertexID \
+        |  GO FROM $-.VertexID over follow \
+        WHERE properties(edge).degree != reduce(totalNum = 5, n IN range(1, 3) | properties($$).age + totalNum + n) \
+        YIELD properties($$).name AS id, properties($$).age AS age, properties(edge).degree AS degree;
++---------------------+-----+--------+
+| id                  | age | degree |
++---------------------+-----+--------+
+| &quot;Tim Duncan&quot;        | 42  | 95     |
+| &quot;LaMarcus Aldridge&quot; | 33  | 90     |
+| &quot;Manu Ginobili&quot;     | 41  | 95     |
++---------------------+-----+--------+
+</code></pre></div>
+<h2 id="for_ngql_statements">For nGQL statements<a class="headerlink" href="#for_ngql_statements" title="Permanent link">&para;</a></h2>
+<h3 id="keys">keys()<a class="headerlink" href="#keys" title="Permanent link">&para;</a></h3>
+<p>keys() returns a list containing the string representations for all the property names of vertices or edges.</p>
+<p>Syntax: <code>keys({vertex | edge})</code></p>
+<ul>
+<li>Result type: List</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; LOOKUP ON player \
+        WHERE player.age  &gt; 45 \
+        YIELD keys(vertex);
++-----------------+
+| keys(VERTEX)    |
++-----------------+
+| [&quot;age&quot;, &quot;name&quot;] |
+| [&quot;age&quot;, &quot;name&quot;] |
++-----------------+
+</code></pre></div>
+<h3 id="labels">labels()<a class="headerlink" href="#labels" title="Permanent link">&para;</a></h3>
+<p>labels() returns the list containing all the tags of a vertex.</p>
+<p>Syntax: <code>labels(verte)</code></p>
+<ul>
+<li>Result type: List</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; FETCH PROP ON * &quot;player101&quot;, &quot;player102&quot;, &quot;team204&quot; \
+        YIELD labels(vertex);
++----------------+
+| labels(VERTEX) |
++----------------+
+| [&quot;player&quot;]     |
+| [&quot;player&quot;]     |
+| [&quot;team&quot;]       |
++----------------+
+</code></pre></div>
+<h2 id="for_statements_compatible_with_opencypher">For statements compatible with openCypher<a class="headerlink" href="#for_statements_compatible_with_opencypher" title="Permanent link">&para;</a></h2>
+<h3 id="keys_1">keys()<a class="headerlink" href="#keys_1" title="Permanent link">&para;</a></h3>
+<p>keys() returns a list containing the string representations for all the property names of vertices, edges, or maps.</p>
+<p>Syntax: <code>keys(&lt;vertex_or_edge&gt;)</code></p>
+<ul>
+<li>Result type: List</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v:player{name:&quot;Tim Duncan&quot;})-[e]-&gt;() \
+        RETURN keys(e);
++----------------------------+
+| keys(e)                    |
++----------------------------+
+| [&quot;end_year&quot;, &quot;start_year&quot;] |
+| [&quot;degree&quot;]                 |
+| [&quot;degree&quot;]                 |
++----------------------------+
+</code></pre></div>
+<h3 id="labels_1">labels()<a class="headerlink" href="#labels_1" title="Permanent link">&para;</a></h3>
+<p>labels() returns the list containing all the tags of a vertex.</p>
+<p>Syntax: <code>labels(&lt;vertex&gt;)</code></p>
+<ul>
+<li>Result type: List</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH (v)-[e:serve]-&gt;() \
+        WHERE id(v)==&quot;player100&quot; \
+        RETURN labels(v);
++------------+
+| labels(v)  |
++------------+
+| [&quot;player&quot;] |
++------------+
+</code></pre></div>
+<h3 id="nodes">nodes()<a class="headerlink" href="#nodes" title="Permanent link">&para;</a></h3>
+<p>nodes() returns the list containing all the vertices in a path.</p>
+<p>Syntax: <code>nodes(&lt;path&gt;)</code></p>
+<ul>
+<li>Result type: List</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})--&gt;(v2) \
         RETURN nodes(p);
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| nodes(p)                                                                                                                                      |
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| [(&quot;player100&quot; :player{age: 42, name: &quot;Tim Duncan&quot;}), (&quot;player101&quot; :player{age: 36, name: &quot;Tony Parker&quot;}), (&quot;team204&quot; :team{name: &quot;Spurs&quot;})]   |
-| [(&quot;player100&quot; :player{age: 42, name: &quot;Tim Duncan&quot;}), (&quot;player125&quot; :player{age: 41, name: &quot;Manu Ginobili&quot;}), (&quot;team204&quot; :team{name: &quot;Spurs&quot;})] |
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-
-nebula&gt; MATCH p = (a:player)-[]-&gt;(b)-[]-&gt;(c:team) WHERE a.player.name == &quot;Tim Duncan&quot; AND c.team.name == &quot;Spurs&quot; RETURN relationships(p);
-+-----------------------------------------------------------------------------------------------------------------------------+
-| relationships(p)                                                                                                            |
-+-----------------------------------------------------------------------------------------------------------------------------+
-| [[:follow &quot;player100&quot;-&gt;&quot;player101&quot; @0 {degree: 95}], [:serve &quot;player101&quot;-&gt;&quot;team204&quot; @0 {end_year: 2018, start_year: 1999}]] |
-| [[:follow &quot;player100&quot;-&gt;&quot;player125&quot; @0 {degree: 95}], [:serve &quot;player125&quot;-&gt;&quot;team204&quot; @0 {end_year: 2018, start_year: 2002}]] |
-+-----------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------+
+| nodes(p)                                                                                                    |
++-------------------------------------------------------------------------------------------------------------+
+| [(&quot;player100&quot; :player{age: 42, name: &quot;Tim Duncan&quot;}), (&quot;team204&quot; :team{name: &quot;Spurs&quot;})]                      |
+| [(&quot;player100&quot; :player{age: 42, name: &quot;Tim Duncan&quot;}), (&quot;player101&quot; :player{age: 36, name: &quot;Tony Parker&quot;})]   |
+| [(&quot;player100&quot; :player{age: 42, name: &quot;Tim Duncan&quot;}), (&quot;player125&quot; :player{age: 41, name: &quot;Manu Ginobili&quot;})] |
++-------------------------------------------------------------------------------------------------------------+
+</code></pre></div>
+<h3 id="relationships">relationships()<a class="headerlink" href="#relationships" title="Permanent link">&para;</a></h3>
+<p>relationships() returns the list containing all the relationships in a path.</p>
+<p>Syntax: <code>relationships(&lt;path&gt;)</code></p>
+<ul>
+<li>Result type: List</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>nebula&gt; MATCH p=(v:player{name:&quot;Tim Duncan&quot;})--&gt;(v2) \
+        RETURN relationships(p);
++-------------------------------------------------------------------------+
+| relationships(p)                                                        |
++-------------------------------------------------------------------------+
+| [[:serve &quot;player100&quot;-&gt;&quot;team204&quot; @0 {end_year: 2016, start_year: 1997}]] |
+| [[:follow &quot;player100&quot;-&gt;&quot;player101&quot; @0 {degree: 95}]]                    |
+| [[:follow &quot;player100&quot;-&gt;&quot;player125&quot; @0 {degree: 95}]]                    |
++-------------------------------------------------------------------------+
 </code></pre></div>
 
   <hr>
@@ -6374,7 +6806,7 @@ nebula&gt; MATCH p = (a:player)-[]-&gt;(b)-[]-&gt;(c:team) WHERE a.player.name =
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 13, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 22, 2022</span>
       
     
   </small>
@@ -6382,11 +6814,14 @@ nebula&gt; MATCH p = (a:player)-[]-&gt;(b)-[]-&gt;(c:team) WHERE a.player.name =
 
               
             </article>
+            
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
           </div>
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Back to top
           </a>
         
@@ -6394,36 +6829,37 @@ nebula&gt; MATCH p = (a:player)-[]-&gt;(b)-[]-&gt;(c:team) WHERE a.player.name =
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../5.case-expressions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Case expressions" rel="prev">
+        <a href="../4.schema/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Schema functions" rel="prev">
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Previous
               </span>
-              Case expressions
+              Schema functions
             </div>
           </div>
         </a>
       
       
         
-        <a href="../7.count/" class="md-footer__link md-footer__link--next" aria-label="Next: count()" rel="next">
+        <a href="../16.type-conversion/" class="md-footer__link md-footer__link--next" aria-label="Next: Type conversion functions" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              count()
+              Type conversion functions
             </div>
           </div>
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
           </div>
         </a>
       
@@ -6466,18 +6902,18 @@ nebula&gt; MATCH p = (a:player)-[]-&gt;(b)-[]-&gt;(c:team) WHERE a.player.name =
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.5e67fbfe.min.js", "version": {"method": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.top", "header.autohide", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"method": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e87a5f81.min.js"></script>
-      
-        <script src="../../../js/version-select.js"></script>
+      <script src="../../../assets/javascripts/bundle.0238f547.min.js"></script>
       
         <script src="../../../js/jquery.js"></script>
       
         <script src="../../../js/search.js"></script>
       
         <script src="../../../js/config.js"></script>
+      
+        <script src="../../../js/version-select.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

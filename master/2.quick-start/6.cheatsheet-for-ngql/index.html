@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.nebula-graph.io/master/2.quick-start/6.cheatsheet-for-ngql/">
       
       <link rel="icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.7">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
@@ -23,11 +23,12 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.9d5733d3.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
+      
       
     
     
@@ -45,9 +46,9 @@
     
       <link rel="stylesheet" href="../../stylesheets/note.css">
     
-      <link rel="stylesheet" href="../../css/version-select.css">
-    
       <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../css/version-select.css">
     
     <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -113,7 +114,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -148,16 +149,36 @@
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
             </label>
           
         
       </form>
     
     
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="https://docs.nebula-graph.com.cn/" hreflang="zh" class="md-select__link">
+                    中文
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -165,13 +186,13 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -191,7 +212,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/vesoft-inc/nebula-docs/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/vesoft-inc/nebula-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -235,7 +256,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/vesoft-inc/nebula-docs/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/vesoft-inc/nebula-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -1320,6 +1341,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../3.ngql-guide/6.functions-and-expressions/15.aggregating/" class="md-nav__link">
+        Aggregate functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../3.ngql-guide/6.functions-and-expressions/2.string/" class="md-nav__link">
         String functions
       </a>
@@ -1362,20 +1397,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3.ngql-guide/6.functions-and-expressions/5.case-expressions/" class="md-nav__link">
-        Case expressions
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../3.ngql-guide/6.functions-and-expressions/6.list/" class="md-nav__link">
         List functions
       </a>
@@ -1390,8 +1411,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3.ngql-guide/6.functions-and-expressions/7.count/" class="md-nav__link">
-        count()
+      <a href="../../3.ngql-guide/6.functions-and-expressions/16.type-conversion/" class="md-nav__link">
+        Type conversion functions
       </a>
     </li>
   
@@ -1404,50 +1425,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3.ngql-guide/6.functions-and-expressions/10.collect/" class="md-nav__link">
-        collect()
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3.ngql-guide/6.functions-and-expressions/11.reduce/" class="md-nav__link">
-        reduce()
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3.ngql-guide/6.functions-and-expressions/12.hash/" class="md-nav__link">
-        hash()
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3.ngql-guide/6.functions-and-expressions/13.concat/" class="md-nav__link">
-        concat()
+      <a href="../../3.ngql-guide/6.functions-and-expressions/5.conditional-expressions/" class="md-nav__link">
+        Conditional expressions
       </a>
     </li>
   
@@ -3093,6 +3072,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.deployment-and-installation/2.compile-and-install-nebula-graph/6.deploy-nebula-graph-with-peripherals/" class="md-nav__link">
+        Deploy Nebula Grpah with ecosystem tools
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -3121,7 +3114,7 @@
   
     <li class="md-nav__item">
       <a href="../../4.deployment-and-installation/deploy-license/" class="md-nav__link">
-        Deploy license
+        Deploy licenses for Nebula Graph Enterprise Edition clusters
       </a>
     </li>
   
@@ -4090,24 +4083,39 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../nebula-cloud/" class="md-nav__link">
+        Nebula Graph Cloud
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_13">
-          Nebula Graph Studio
+        <label class="md-nav__link" for="__nav_14">
+          Nebula Studio
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Nebula Graph Studio" data-md-level="1">
-        <label class="md-nav__title" for="__nav_13">
+      <nav class="md-nav" aria-label="Nebula Studio" data-md-level="1">
+        <label class="md-nav__title" for="__nav_14">
           <span class="md-nav__icon md-icon"></span>
-          Nebula Graph Studio
+          Nebula Studio
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -4134,20 +4142,20 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_2" type="checkbox" id="__nav_13_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_2" type="checkbox" id="__nav_14_2" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_13_2">
-          About Nebula Graph Studio
+        <label class="md-nav__link" for="__nav_14_2">
+          About Nebula Studio
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="About Nebula Graph Studio" data-md-level="2">
-        <label class="md-nav__title" for="__nav_13_2">
+      <nav class="md-nav" aria-label="About Nebula Studio" data-md-level="2">
+        <label class="md-nav__title" for="__nav_14_2">
           <span class="md-nav__icon md-icon"></span>
-          About Nebula Graph Studio
+          About Nebula Studio
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -4158,7 +4166,7 @@
   
     <li class="md-nav__item">
       <a href="../../nebula-studio/about-studio/st-ug-what-is-graph-studio/" class="md-nav__link">
-        What is Nebula Graph Studio
+        What is Nebula Studio
       </a>
     </li>
   
@@ -4195,18 +4203,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_3" type="checkbox" id="__nav_13_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_3" type="checkbox" id="__nav_14_3" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_13_3">
+        <label class="md-nav__link" for="__nav_14_3">
           Deploy and connect
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Deploy and connect" data-md-level="2">
-        <label class="md-nav__title" for="__nav_13_3">
+        <label class="md-nav__title" for="__nav_14_3">
           <span class="md-nav__icon md-icon"></span>
           Deploy and connect
         </label>
@@ -4270,18 +4278,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_4" type="checkbox" id="__nav_13_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_4" type="checkbox" id="__nav_14_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_13_4">
+        <label class="md-nav__link" for="__nav_14_4">
           Quick start
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Quick start" data-md-level="2">
-        <label class="md-nav__title" for="__nav_13_4">
+        <label class="md-nav__title" for="__nav_14_4">
           <span class="md-nav__icon md-icon"></span>
           Quick start
         </label>
@@ -4352,18 +4360,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_4_5" type="checkbox" id="__nav_13_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_4_5" type="checkbox" id="__nav_14_4_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_13_4_5">
+        <label class="md-nav__link" for="__nav_14_4_5">
           Use Schema
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Use Schema" data-md-level="3">
-        <label class="md-nav__title" for="__nav_13_4_5">
+        <label class="md-nav__title" for="__nav_14_4_5">
           <span class="md-nav__icon md-icon"></span>
           Use Schema
         </label>
@@ -4448,18 +4456,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_5" type="checkbox" id="__nav_13_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14_5" type="checkbox" id="__nav_14_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_13_5">
+        <label class="md-nav__link" for="__nav_14_5">
           Troubleshooting
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Troubleshooting" data-md-level="2">
-        <label class="md-nav__title" for="__nav_13_5">
+        <label class="md-nav__title" for="__nav_14_5">
           <span class="md-nav__icon md-icon"></span>
           Troubleshooting
         </label>
@@ -4531,18 +4539,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_14">
+        <label class="md-nav__link" for="__nav_15">
           Nebula Dashboard Community Edition
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Nebula Dashboard Community Edition" data-md-level="1">
-        <label class="md-nav__title" for="__nav_14">
+        <label class="md-nav__title" for="__nav_15">
           <span class="md-nav__icon md-icon"></span>
           Nebula Dashboard Community Edition
         </label>
@@ -4635,18 +4643,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_15">
+        <label class="md-nav__link" for="__nav_16">
           Nebula Dashboard Enterprise Edition
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Nebula Dashboard Enterprise Edition" data-md-level="1">
-        <label class="md-nav__title" for="__nav_15">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           Nebula Dashboard Enterprise Edition
         </label>
@@ -4659,7 +4667,7 @@
   
     <li class="md-nav__item">
       <a href="../../nebula-dashboard-ent/1.what-is-dashboard-ent/" class="md-nav__link">
-        What is Nebula Dashboard
+        What is Nebula Dashboard Enterprise Edition
       </a>
     </li>
   
@@ -4673,7 +4681,21 @@
   
     <li class="md-nav__item">
       <a href="../../nebula-dashboard-ent/2.deploy-connect-dashboard-ent/" class="md-nav__link">
-        Deploy Dashboard
+        Deploy Dashboard Enterprise Edition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nebula-dashboard-ent/11.dashboard-ent-license/" class="md-nav__link">
+        Nebula Dashboard Enterprise Edition license
       </a>
     </li>
   
@@ -4689,18 +4711,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_3" type="checkbox" id="__nav_15_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_4" type="checkbox" id="__nav_16_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_15_3">
+        <label class="md-nav__link" for="__nav_16_4">
           Create and import clusters
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Create and import clusters" data-md-level="2">
-        <label class="md-nav__title" for="__nav_15_3">
+        <label class="md-nav__title" for="__nav_16_4">
           <span class="md-nav__icon md-icon"></span>
           Create and import clusters
         </label>
@@ -4750,18 +4772,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_4" type="checkbox" id="__nav_15_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_5" type="checkbox" id="__nav_16_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_15_4">
+        <label class="md-nav__link" for="__nav_16_5">
           Cluster management
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Cluster management" data-md-level="2">
-        <label class="md-nav__title" for="__nav_15_4">
+        <label class="md-nav__title" for="__nav_16_5">
           <span class="md-nav__icon md-icon"></span>
           Cluster management
         </label>
@@ -4973,18 +4995,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" type="checkbox" id="__nav_17" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_16">
+        <label class="md-nav__link" for="__nav_17">
           Nebula Explorer
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Nebula Explorer" data-md-level="1">
-        <label class="md-nav__title" for="__nav_16">
+        <label class="md-nav__title" for="__nav_17">
           <span class="md-nav__icon md-icon"></span>
           Nebula Explorer
         </label>
@@ -5013,18 +5035,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_2" type="checkbox" id="__nav_16_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17_2" type="checkbox" id="__nav_17_2" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_16_2">
+        <label class="md-nav__link" for="__nav_17_2">
           Deploy and connect
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Deploy and connect" data-md-level="2">
-        <label class="md-nav__title" for="__nav_16_2">
+        <label class="md-nav__title" for="__nav_17_2">
           <span class="md-nav__icon md-icon"></span>
           Deploy and connect
         </label>
@@ -5052,6 +5074,20 @@
     <li class="md-nav__item">
       <a href="../../nebula-explorer/deploy-connect/ex-ug-connect/" class="md-nav__link">
         Connect to Nebula Graph
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nebula-explorer/deploy-connect/3.explorer-license/" class="md-nav__link">
+        Nebula Explorer License
       </a>
     </li>
   
@@ -5186,18 +5222,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_11" type="checkbox" id="__nav_16_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17_11" type="checkbox" id="__nav_17_11" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_16_11">
+        <label class="md-nav__link" for="__nav_17_11">
           Canvas
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Canvas" data-md-level="2">
-        <label class="md-nav__title" for="__nav_16_11">
+        <label class="md-nav__title" for="__nav_17_11">
           <span class="md-nav__icon md-icon"></span>
           Canvas
         </label>
@@ -5297,18 +5333,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" type="checkbox" id="__nav_17" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18" type="checkbox" id="__nav_18" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_17">
+        <label class="md-nav__link" for="__nav_18">
           Nebula Importer
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Nebula Importer" data-md-level="1">
-        <label class="md-nav__title" for="__nav_17">
+        <label class="md-nav__title" for="__nav_18">
           <span class="md-nav__icon md-icon"></span>
           Nebula Importer
         </label>
@@ -5373,18 +5409,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18" type="checkbox" id="__nav_18" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19" type="checkbox" id="__nav_19" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_18">
+        <label class="md-nav__link" for="__nav_19">
           Nebula Exchange
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Nebula Exchange" data-md-level="1">
-        <label class="md-nav__title" for="__nav_18">
+        <label class="md-nav__title" for="__nav_19">
           <span class="md-nav__icon md-icon"></span>
           Nebula Exchange
         </label>
@@ -5399,18 +5435,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18_1" type="checkbox" id="__nav_18_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19_1" type="checkbox" id="__nav_19_1" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_18_1">
+        <label class="md-nav__link" for="__nav_19_1">
           Introduction
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Introduction" data-md-level="2">
-        <label class="md-nav__title" for="__nav_18_1">
+        <label class="md-nav__title" for="__nav_19_1">
           <span class="md-nav__icon md-icon"></span>
           Introduction
         </label>
@@ -5474,18 +5510,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18_3" type="checkbox" id="__nav_18_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19_3" type="checkbox" id="__nav_19_3" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_18_3">
+        <label class="md-nav__link" for="__nav_19_3">
           Exchange configurations
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Exchange configurations" data-md-level="2">
-        <label class="md-nav__title" for="__nav_18_3">
+        <label class="md-nav__title" for="__nav_19_3">
           <span class="md-nav__icon md-icon"></span>
           Exchange configurations
         </label>
@@ -5535,18 +5571,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18_4" type="checkbox" id="__nav_18_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19_4" type="checkbox" id="__nav_19_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_18_4">
+        <label class="md-nav__link" for="__nav_19_4">
           Use Nebula Exchange
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Use Nebula Exchange" data-md-level="2">
-        <label class="md-nav__title" for="__nav_18_4">
+        <label class="md-nav__title" for="__nav_19_4">
           <span class="md-nav__icon md-icon"></span>
           Use Nebula Exchange
         </label>
@@ -5786,18 +5822,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19" type="checkbox" id="__nav_19" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_20" type="checkbox" id="__nav_20" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_19">
+        <label class="md-nav__link" for="__nav_20">
           Nebula Operator
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Nebula Operator" data-md-level="1">
-        <label class="md-nav__title" for="__nav_19">
+        <label class="md-nav__title" for="__nav_20">
           <span class="md-nav__icon md-icon"></span>
           Nebula Operator
         </label>
@@ -5854,18 +5890,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19_4" type="checkbox" id="__nav_19_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_20_4" type="checkbox" id="__nav_20_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_19_4">
+        <label class="md-nav__link" for="__nav_20_4">
           Deploy clusters
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Deploy clusters" data-md-level="2">
-        <label class="md-nav__title" for="__nav_19_4">
+        <label class="md-nav__title" for="__nav_20_4">
           <span class="md-nav__icon md-icon"></span>
           Deploy clusters
         </label>
@@ -5915,18 +5951,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19_5" type="checkbox" id="__nav_19_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_20_5" type="checkbox" id="__nav_20_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_19_5">
+        <label class="md-nav__link" for="__nav_20_5">
           Configure clusters
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Configure clusters" data-md-level="2">
-        <label class="md-nav__title" for="__nav_19_5">
+        <label class="md-nav__title" for="__nav_20_5">
           <span class="md-nav__icon md-icon"></span>
           Configure clusters
         </label>
@@ -6129,22 +6165,36 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_25" type="checkbox" id="__nav_25" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_26" type="checkbox" id="__nav_26" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_25">
+        <label class="md-nav__link" for="__nav_26">
           Appendix
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Appendix" data-md-level="1">
-        <label class="md-nav__title" for="__nav_25">
+        <label class="md-nav__title" for="__nav_26">
           <span class="md-nav__icon md-icon"></span>
           Appendix
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20.appendix/release-note/" class="md-nav__link">
+        Release Note
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -6166,8 +6216,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../20.appendix/releasenote/" class="md-nav__link">
-        Release Note
+      <a href="../../20.appendix/8.about-license/" class="md-nav__link">
+        About Nebula Graph licenses
       </a>
     </li>
   
@@ -6260,21 +6310,6 @@
           
         </ul>
       </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://docs.nebula-graph.com.cn/" class="md-nav__link">
-        中文手册
-      </a>
     </li>
   
 
@@ -6416,9 +6451,9 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/vesoft-inc/nebula-docs/edit/master/docs-2.0/2.quick-start/6.cheatsheet-for-ngql.md" title="Edit this page" class="md-content__button md-icon">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-</a>
+  <a href="https://github.com/vesoft-inc/nebula-docs/edit/master/docs-2.0/2.quick-start/6.cheatsheet-for-ngql.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
 
 
 
@@ -6465,15 +6500,15 @@
 </tr>
 <tr>
 <td align="left">double pow(double x, double y)</td>
-<td align="left">Returns the result of <span class="arithmatex">\(x^y\)</span>.</td>
+<td align="left">Returns the result of x<sup>y</sup>.</td>
 </tr>
 <tr>
 <td align="left">double exp(double x)</td>
-<td align="left">Returns the result of <span class="arithmatex">\(e^x\)</span>.</td>
+<td align="left">Returns the result of e<sup>x</sup>.</td>
 </tr>
 <tr>
 <td align="left">double exp2(double x)</td>
-<td align="left">Returns the result of <span class="arithmatex">\(2^x\)</span>.</td>
+<td align="left">Returns the result of 2<sup>x</sup>.</td>
 </tr>
 <tr>
 <td align="left">double log(double x)</td>
@@ -6522,26 +6557,6 @@
 <tr>
 <td align="left">int rand64(int min, int max)</td>
 <td align="left">Returns a random 64-bit integer in <code>[min, max)</code>.<br/>If you set only one argument, it is parsed as <code>max</code> and <code>min</code> is <code>0</code> by default.<br/>If you set no argument, the system returns a random signed 64-bit integer.</td>
-</tr>
-<tr>
-<td align="left">collect()</td>
-<td align="left">Puts all the collected values into a list.</td>
-</tr>
-<tr>
-<td align="left">avg()</td>
-<td align="left">Returns the average value of the argument.</td>
-</tr>
-<tr>
-<td align="left">count()</td>
-<td align="left">Returns the number of records.</td>
-</tr>
-<tr>
-<td align="left">max()</td>
-<td align="left">Returns the maximum value.</td>
-</tr>
-<tr>
-<td align="left">min()</td>
-<td align="left">Returns the minimum value.</td>
 </tr>
 <tr>
 <td align="left">std()</td>
@@ -6593,94 +6608,129 @@
 </ul>
 <ul>
 <li>
-<p><a href="../../3.ngql-guide/6.functions-and-expressions/2.string/">String functions</a></p>
+<p><a href="../../3.ngql-guide/6.functions-and-expressions/15.aggregating/">Aggregating functions</a></p>
 <table>
 <thead>
 <tr>
-<th>Function</th>
-<th>Description</th>
+<th align="left">Function</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>int strcasecmp(string a, string b)</td>
-<td>Compares string a and b without case sensitivity. When a = b, the return value is 0. When a &gt; b, the return value is greater than 0. When a &lt; b, the return value is less than 0.</td>
+<td align="left">avg()</td>
+<td align="left">Returns the average value of the argument.</td>
 </tr>
 <tr>
-<td>string lower(string a)</td>
-<td>Returns the argument in lowercase.</td>
+<td align="left">count()</td>
+<td align="left">Syntax: <code>count({expr | *})</code> .<br><code>count()</code>returns the number of rows (including NULL).<br> <code>count(expr)</code>returns the number of non-NULL values that meet the expression.<br> count() and size() are different.</td>
 </tr>
 <tr>
-<td>string toLower(string a)</td>
-<td>The same as <code>lower()</code>.</td>
+<td align="left">max()</td>
+<td align="left">Returns the maximum value.</td>
 </tr>
 <tr>
-<td>string upper(string a)</td>
-<td>Returns the argument in uppercase.</td>
+<td align="left">min()</td>
+<td align="left">Returns the minimum value.</td>
 </tr>
 <tr>
-<td>string toUpper(string a)</td>
-<td>The same as <code>upper()</code>.</td>
+<td align="left">collect()</td>
+<td align="left">The collect() function returns a list containing the values returned by an expression. Using this function aggregates data by merging multiple records or values into a single list.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<ul>
+<li>
+<p><a href="../../3.ngql-guide/6.functions-and-expressions/2.string/">String functions</a></p>
+<table>
+<thead>
+<tr>
+<th align="left">Function</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">int strcasecmp(string a, string b)</td>
+<td align="left">Compares string a and b without case sensitivity. When a = b, the return</td>
 </tr>
 <tr>
-<td>int length(string a)</td>
-<td>Returns the length of the given string in bytes.</td>
+<td align="left">string lower(string a)</td>
+<td align="left">Returns the argument in lowercase.</td>
 </tr>
 <tr>
-<td>string trim(string a)</td>
-<td>Removes leading and trailing spaces.</td>
+<td align="left">string toLower(string a)</td>
+<td align="left">The same as <code>lower()</code>.</td>
 </tr>
 <tr>
-<td>string ltrim(string a)</td>
-<td>Removes leading spaces.</td>
+<td align="left">string upper(string a)</td>
+<td align="left">Returns the argument in uppercase.</td>
 </tr>
 <tr>
-<td>string rtrim(string a)</td>
-<td>Removes trailing spaces.</td>
+<td align="left">string toUpper(string a)</td>
+<td align="left">The same as <code>upper()</code>.</td>
 </tr>
 <tr>
-<td>string left(string a, int count)</td>
-<td>Returns a substring consisting of <code>count</code> characters from the left side of string a. If string a is shorter than <code>count</code>, the system returns string a.</td>
+<td align="left">int length(string a)</td>
+<td align="left">Returns the length of the given string in bytes.</td>
 </tr>
 <tr>
-<td>string right(string a, int count)</td>
-<td>Returns a substring consisting of <code>count</code> characters from the right side of string a. If string a is shorter than <code>count</code>, the system returns string a.</td>
+<td align="left">string trim(string a)</td>
+<td align="left">Removes leading and trailing spaces.</td>
 </tr>
 <tr>
-<td>string lpad(string a, int size, string letters)</td>
-<td>Left-pads string a with string <code>letters</code> and returns a substring with the length of <code>size</code>.</td>
+<td align="left">string ltrim(string a)</td>
+<td align="left">Removes leading spaces.</td>
 </tr>
 <tr>
-<td>string rpad(string a, int size, string letters)</td>
-<td>Right-pads string a with string <code>letters</code> and returns a substring with the length of <code>size</code>.</td>
+<td align="left">string rtrim(string a)</td>
+<td align="left">Removes trailing spaces.</td>
 </tr>
 <tr>
-<td>string substr(string a, int pos, int count)</td>
-<td>Returns a substring extracting <code>count</code> characters starting from the specified position <code>pos</code> of string a.</td>
+<td align="left">string left(string a, int count)</td>
+<td align="left">Returns a substring consisting of <code>count</code> characters from the left side of</td>
 </tr>
 <tr>
-<td>string substring(string a, int pos, int count)</td>
-<td>The same as <code>substr()</code>.</td>
+<td align="left">string right(string a, int count)</td>
+<td align="left">Returns a substring consisting of <code>count</code> characters from the right side of</td>
 </tr>
 <tr>
-<td>string reverse(string)</td>
-<td>Returns a string in reverse order.</td>
+<td align="left">string lpad(string a, int size, string letters)</td>
+<td align="left">Left-pads string a with string <code>letters</code> and returns a</td>
 </tr>
 <tr>
-<td>string replace(string a, string b, string c)</td>
-<td>Replaces string b in string a with string c.</td>
+<td align="left">string rpad(string a, int size, string letters)</td>
+<td align="left">Right-pads string a with string <code>letters</code> and returns a</td>
 </tr>
 <tr>
-<td>list split(string a, string b)</td>
-<td>Splits string a at string b and returns a list of strings.</td>
+<td align="left">string substr(string a, int pos, int count)</td>
+<td align="left">Returns a substring extracting <code>count</code> characters starting from</td>
 </tr>
 <tr>
-<td>string toString()</td>
-<td>Takes in any data type and converts it into a string.</td>
+<td align="left">string substring(string a, int pos, int count)</td>
+<td align="left">The same as <code>substr()</code>.</td>
 </tr>
 <tr>
-<td>int hash()</td>
-<td>Takes in any data type and encodes it into a hash value.</td>
+<td align="left">string reverse(string)</td>
+<td align="left">Returns a string in reverse order.</td>
+</tr>
+<tr>
+<td align="left">string replace(string a, string b, string c)</td>
+<td align="left">Replaces string b in string a with string c.</td>
+</tr>
+<tr>
+<td align="left">list split(string a, string b)</td>
+<td align="left">Splits string a at string b and returns a list of strings.</td>
+</tr>
+<tr>
+<td align="left">concat()</td>
+<td align="left">The <code>concat()</code> function requires at least two or more strings. All the parameters are concatenated into one string.<br>Syntax: <code>concat(string1,string2,...)</code></td>
+</tr>
+<tr>
+<td align="left">concat_ws()</td>
+<td align="left">The <code>concat_ws()</code> function connects two or more strings with a predefined separator.</td>
 </tr>
 </tbody>
 </table>
@@ -6773,15 +6823,15 @@
 </tr>
 <tr>
 <td align="left">vertices</td>
-<td align="left">Returns the information of vertices in a subgraph. For more information, see <a href="../../3.ngql-guide/16.subgraph-and-path/1.get-subgraph/">GET SUBGRAPH</a>。</td>
+<td align="left">Returns the information of vertices in a subgraph. For more information, see <a href="../../3.ngql-guide/16.subgraph-and-path/1.get-subgraph/">GET SUBGRAPH</a>.</td>
 </tr>
 <tr>
 <td align="left">edges</td>
-<td align="left">Returns the information of edges in a subgraph. For more information, see <a href="../../3.ngql-guide/16.subgraph-and-path/1.get-subgraph/">GET SUBGRAPH</a>。</td>
+<td align="left">Returns the information of edges in a subgraph. For more information, see <a href="../../3.ngql-guide/16.subgraph-and-path/1.get-subgraph/">GET SUBGRAPH</a>.</td>
 </tr>
 <tr>
 <td align="left">path</td>
-<td align="left">Returns the information of a path. For more information, see <a href="../../3.ngql-guide/16.subgraph-and-path/2.find-path/">FIND PATH</a>。</td>
+<td align="left">Returns the information of a path. For more information, see <a href="../../3.ngql-guide/16.subgraph-and-path/2.find-path/">FIND PATH</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -6892,70 +6942,7 @@
 <td>Returns the last element of a list.</td>
 </tr>
 <tr>
-<td>coalesce(list)</td>
-<td>Returns the first not null value in a list.</td>
-</tr>
-<tr>
 <td>reduce()</td>
-<td>See <a href="../../3.ngql-guide/6.functions-and-expressions/11.reduce/">reduce() function</a>。</td>
-</tr>
-</tbody>
-</table>
-</li>
-</ul>
-<ul>
-<li>
-<p><a href="../../3.ngql-guide/6.functions-and-expressions/7.count/">count() function</a></p>
-<table>
-<thead>
-<tr>
-<th align="left">Function</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">count()</td>
-<td align="left">Syntax: <code>count({expr | *})</code> .<br><code>count()</code>returns the number of rows (including NULL).<br> <code>count(expr)</code>returns the number of non-NULL values that meet the expression.<br> count() and size() are different.</td>
-</tr>
-</tbody>
-</table>
-</li>
-</ul>
-<ul>
-<li>
-<p><a href="../../3.ngql-guide/6.functions-and-expressions/10.collect/">collect() function</a></p>
-<table>
-<thead>
-<tr>
-<th align="left">Function</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">collect()</td>
-<td align="left">The collect() function returns a list containing the values returned by an expression. Using this function aggregates data by merging multiple records or values into a single list.</td>
-</tr>
-</tbody>
-</table>
-</li>
-</ul>
-<ul>
-<li>
-<p><a href="../../3.ngql-guide/6.functions-and-expressions/11.reduce/">reduce() function</a></p>
-<table>
-<thead>
-<tr>
-<th align="left">Function</th>
-<th align="left">Syntax</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">reduce()</td>
-<td align="left"><code>reduce(&lt;accumulator&gt; = &lt;initial&gt;, &lt;variable&gt; IN &lt;list&gt; | &lt;expression&gt;)</code></td>
 <td>The <code>reduce()</code> function applies an expression to each element in a list one by one, chains the result to the next iteration by taking it as the initial value, and returns the final result.</td>
 </tr>
 </tbody>
@@ -6964,45 +6951,7 @@
 </ul>
 <ul>
 <li>
-<p><a href="../../3.ngql-guide/6.functions-and-expressions/12.hash/">hash() function</a></p>
-<table>
-<thead>
-<tr>
-<th align="left">Function</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">hash()</td>
-<td align="left">The <code>hash()</code> function returns the hash value of the argument. The argument can be a number, a string, a list, a boolean, null, or an expression that evaluates to a value of the preceding data types. The source code of the <code>hash()</code> function (MurmurHash2), seed (<code>0xc70f6907UL</code>), and other parameters can be found in <a href="https://github.com/vesoft-inc/nebula/blob/master/src/common/base/MurmurHash2.h"><code>MurmurHash2.h</code></a>.</td>
-</tr>
-</tbody>
-</table>
-</li>
-</ul>
-<ul>
-<li>
-<p><a href="../../3.ngql-guide/6.functions-and-expressions/13.concat/">concat() function</a></p>
-<table>
-<thead>
-<tr>
-<th align="left">Function</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">concat()</td>
-<td align="left">The <code>concat()</code> function requires at least two or more strings. All the parameters are concatenated into one string.<br>Syntax: <code>concat(string1,string2,...)</code></td>
-</tr>
-</tbody>
-</table>
-</li>
-</ul>
-<ul>
-<li>
-<p><a href="../../3.ngql-guide/6.functions-and-expressions/13.concat/">concat_ws() function</a></p>
+<p><a href="../../3.ngql-guide/6.functions-and-expressions/16.type-conversion/">Type conversion functions</a></p>
 <table>
 <thead>
 <tr>
@@ -7012,8 +6961,28 @@
 </thead>
 <tbody>
 <tr>
-<td>concat_ws()</td>
-<td>The <code>concat_ws()</code> function connects two or more strings with a predefined separator.</td>
+<td>bool toBoolean()</td>
+<td>Converts a string value to a boolean value.</td>
+</tr>
+<tr>
+<td>float toFloat()</td>
+<td>Converts an integer or string value to a floating point number.</td>
+</tr>
+<tr>
+<td>string toString()</td>
+<td>Converts non-compound types of data, such as numbers, booleans, and so on, to strings.</td>
+</tr>
+<tr>
+<td>int toInteger()</td>
+<td>Converts a floating point or string value to an integer value.</td>
+</tr>
+<tr>
+<td>set toSet()</td>
+<td>Converts a list or set value to a set value.</td>
+</tr>
+<tr>
+<td>int hash()</td>
+<td>The <code>hash()</code> function returns the hash value of the argument. The argument can be a number, a string, a list, a boolean, null, or an expression that evaluates to a value of the preceding data types.</td>
 </tr>
 </tbody>
 </table>
@@ -7059,43 +7028,27 @@
 </ul>
 <ul>
 <li>
-<p><a href="../../3.ngql-guide/6.functions-and-expressions/5.case-expressions/">CASE expressions</a></p>
-<p>The <code>CASE</code> expression uses conditions to filter the result of an nGQL query statement. It is usually used in the <code>YIELD</code> and <code>RETURN</code> clauses. The <code>CASE</code> expression will traverse all the conditions. When the first condition is met, the <code>CASE</code> expression stops reading the conditions and returns the result. If no conditions are met, it returns the result in the <code>ELSE</code> clause. If there is no <code>ELSE</code> clause and no conditions are met, it returns <code>NULL</code>.</p>
-<p>Syntax:</p>
-<div class="highlight"><pre><span></span><code>CASE &lt;comparer&gt;
-WHEN &lt;value&gt; THEN &lt;result&gt;
-[WHEN ...]
-[ELSE &lt;default&gt;]
-END
-</code></pre></div>
-</li>
-</ul>
+<p><a href="../../3.ngql-guide/6.functions-and-expressions/5.conditional-expressions/">Conditional expressions functions</a></p>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Description</th>
+<th align="left">Function</th>
+<th align="center">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>comparer</code></td>
-<td>A value or a valid expression that outputs a value. This value is used to compare with the <code>value</code>.</td>
+<td align="left">CASE</td>
+<td align="center">The <code>CASE</code> expression uses conditions to filter the result of an nGQL query statement. It is usually used in the <code>YIELD</code> and <code>RETURN</code> clauses. The <code>CASE</code> expression will traverse all the conditions. When the first condition is met, the <code>CASE</code> expression stops reading the conditions and returns the result. If no conditions are met, it returns the result in the <code>ELSE</code> clause. If there is no <code>ELSE</code> clause and no conditions are met, it returns <code>NULL</code>.</td>
 </tr>
 <tr>
-<td><code>value</code></td>
-<td>It will be compared with the <code>comparer</code>. If the <code>value</code> matches the <code>comparer</code>, then this condition is met.</td>
-</tr>
-<tr>
-<td><code>result</code></td>
-<td>The <code>result</code> is returned by the <code>CASE</code> expression if the <code>value</code> matches the <code>comparer</code>.</td>
-</tr>
-<tr>
-<td><code>default</code></td>
-<td>The <code>default</code> is returned by the <code>CASE</code> expression if no conditions are met.</td>
+<td align="left">coalesce()</td>
+<td align="center">Returns the first not null value in all expressions.</td>
 </tr>
 </tbody>
 </table>
+</li>
+</ul>
 <h2 id="general_queries_statements">General queries statements<a class="headerlink" href="#general_queries_statements" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -7153,12 +7106,12 @@ END
 </tr>
 <tr>
 <td>Match edges</td>
-<td><code>MATCH (v:player{name:"Tim Duncan"})-[e]-(v2) RETURN e</code></td>
+<td><code>MATCH (v:player{name:"Tim Duncan"})-[e]-(v2) RETURN e</code><br><code>MATCH ()&lt;-[e]-() RETURN e LIMIT 3</code></td>
 <td>Besides using <code>--</code>, <code>--&gt;</code>, or <code>&lt;--</code> to indicate a nameless edge, you can use a user-defined variable in a pair of square brackets to represent a named edge. For example: <code>-[e]-</code>.</td>
 </tr>
 <tr>
 <td>Match an edge type</td>
-<td><code>MATCH ()-[e:follow]-() RETURN e</code></td>
+<td><code>MATCH ()-[e:follow]-() RETURN e LIMIT 5</code></td>
 <td>Just like vertices, you can specify an edge type with <code>:&lt;edge_type&gt;</code> in a pattern. For example: <code>-[e:follow]-</code>.</td>
 </tr>
 <tr>
@@ -7238,7 +7191,7 @@ END
 </tr>
 <tr>
 <td>Retrieve path length</td>
-<td><code>MATCH p=(v:player{name:"Tim Duncan"&gt;})-[*..2]-&gt;(v2) RETURN p AS Paths, length(p) AS Length</code></td>
+<td><code>MATCH p=(v:player{name:"Tim Duncan"})-[*..2]-&gt;(v2) RETURN p AS Paths, length(p) AS Length</code></td>
 <td>Use the <code>length()</code> function to retrieve the length of a path.</td>
 </tr>
 </tbody>
@@ -7546,7 +7499,7 @@ YIELD &lt;output&gt;;
 <tr>
 <td><a href="../../3.ngql-guide/7.general-query-statements/6.show/15.show-tags-edges/">SHOW TAGS/EDGES</a></td>
 <td><code>SHOW TAGS | EDGES</code></td>
-<td><code>SHOW TAGS</code>、<code>SHOW EDGES</code></td>
+<td><code>SHOW TAGS</code>,<code>SHOW EDGES</code></td>
 <td>Shows all the tags in the current graph space.</td>
 </tr>
 <tr>
@@ -7603,7 +7556,7 @@ YIELD &lt;output&gt;;
 <tr>
 <td><a href="../../3.ngql-guide/8.clauses-and-options/limit/">LIMIT</a></td>
 <td><code>YIELD &lt;var&gt; [| LIMIT [&lt;offset_value&gt;,] &lt;number_rows&gt;]</code></td>
-<td><code>O FROM "player100" OVER follow REVERSELY YIELD $$.player.name AS Friend, $$.player.age AS Age | ORDER BY $-.Age, $-.Friend | LIMIT 1, 3</code></td>
+<td><code>GO FROM "player100" OVER follow REVERSELY YIELD $$.player.name AS Friend, $$.player.age AS Age | ORDER BY $-.Age, $-.Friend | LIMIT 1, 3</code></td>
 <td>Returns the 3 rows of data starting from the second row of the sorted output.</td>
 </tr>
 <tr>
@@ -7701,7 +7654,13 @@ YIELD &lt;output&gt;;
 <td><a href="../../3.ngql-guide/9.space-statements/4.describe-space/">DESCRIBE SPACE</a></td>
 <td><code>DESC[RIBE] SPACE &lt;graph_space_name&gt;</code></td>
 <td><code>DESCRIBE SPACE basketballplayer</code></td>
-<td>Returns the information about the specified graph space.息。</td>
+<td>Returns the information about the specified graph space.</td>
+</tr>
+<tr>
+<td><a href="../../3.ngql-guide/9.space-statements/6.clear-space/">CLEAR SPACE</a></td>
+<td><code>CLEAR SPACE [IF EXISTS] &lt;graph_space_name&gt;</code></td>
+<td>Deletes the vertices and edges in a graph space, but does not delete the graph space itself and the schema information.</td>
+<td></td>
 </tr>
 <tr>
 <td><a href="../../3.ngql-guide/9.space-statements/5.drop-space/">DROP SPACE</a></td>
@@ -7731,14 +7690,14 @@ YIELD &lt;output&gt;;
 <tr>
 <td><a href="../../3.ngql-guide/10.tag-statements/2.drop-tag/">DROP TAG</a></td>
 <td><code>DROP TAG [IF EXISTS] &lt;tag_name&gt;</code></td>
-<td><code>CREATE TAG test(p1 string, p2 int)</code></td>
+<td><code>DROP TAG test;</code></td>
 <td>Drops a tag with the given name in the current working graph space.</td>
 </tr>
 <tr>
 <td><a href="../../3.ngql-guide/10.tag-statements/3.alter-tag/">ALTER TAG</a></td>
 <td><code>ALTER TAG &lt;tag_name&gt;    &lt;alter_definition&gt; [, alter_definition] ...]    [ttl_definition [, ttl_definition] ... ]    [COMMENT = '&lt;comment&gt;']</code></td>
 <td><code>ALTER TAG t1 ADD (p3 int, p4 string)</code></td>
-<td>Alters the structure of a tag with the given name in a graph space. You can add or drop properties, and change the data type of an existing property. You can also set a <a href="../../3.ngql-guide/8.clauses-and-options/ttl-options/">TTL</a>（Time-To-Live）on a property, or change its TTL duration.</td>
+<td>Alters the structure of a tag with the given name in a graph space. You can add or drop properties, and change the data type of an existing property. You can also set a <a href="../../3.ngql-guide/8.clauses-and-options/ttl-options/">TTL</a> (Time-To-Live) on a property, or change its TTL duration.</td>
 </tr>
 <tr>
 <td><a href="../../3.ngql-guide/10.tag-statements/4.show-tags/">SHOW TAGS</a></td>
@@ -7775,7 +7734,7 @@ YIELD &lt;output&gt;;
 <td><a href="../../3.ngql-guide/11.edge-type-statements/1.create-edge/">CREATE EDGE</a></td>
 <td><code>CREATE EDGE [IF NOT EXISTS] &lt;edge_type_name&gt;    ( &lt;prop_name&gt; &lt;data_type&gt; [NULL | NOT NULL] [DEFAULT &lt;default_value&gt;] [COMMENT '&lt;comment&gt;'] [{, &lt;prop_name&gt; &lt;data_type&gt; [NULL | NOT NULL] [DEFAULT &lt;default_value&gt;] [COMMENT '&lt;comment&gt;']} ...] ) [TTL_DURATION = &lt;ttl_duration&gt;] [TTL_COL = &lt;prop_name&gt;] [COMMENT = '&lt;comment&gt;']</code></td>
 <td><code>CREATE EDGE e1(p1 string, p2 int, p3 timestamp) TTL_DURATION = 100, TTL_COL = "p2"</code></td>
-<td>Creates an edge type with the given name in a graph space.type。</td>
+<td>Creates an edge type with the given name in a graph space.</td>
 </tr>
 <tr>
 <td><a href="../../3.ngql-guide/11.edge-type-statements/2.drop-edge/">DROP EDGE</a></td>
@@ -8146,7 +8105,7 @@ YIELD &lt;output&gt;;
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 21, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 29, 2022</span>
       
     
   </small>
@@ -8154,11 +8113,14 @@ YIELD &lt;output&gt;;
 
               
             </article>
+            
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
           </div>
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Back to top
           </a>
         
@@ -8166,12 +8128,13 @@ YIELD &lt;output&gt;;
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
         <a href="../4.nebula-graph-crud/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Step 5 Use nGQL (CRUD)" rel="prev">
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
@@ -8195,7 +8158,7 @@ YIELD &lt;output&gt;;
             </div>
           </div>
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
           </div>
         </a>
       
@@ -8238,18 +8201,18 @@ YIELD &lt;output&gt;;
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.5e67fbfe.min.js", "version": {"method": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "header.autohide", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"method": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e87a5f81.min.js"></script>
-      
-        <script src="../../js/version-select.js"></script>
+      <script src="../../assets/javascripts/bundle.0238f547.min.js"></script>
       
         <script src="../../js/jquery.js"></script>
       
         <script src="../../js/search.js"></script>
       
         <script src="../../js/config.js"></script>
+      
+        <script src="../../js/version-select.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
