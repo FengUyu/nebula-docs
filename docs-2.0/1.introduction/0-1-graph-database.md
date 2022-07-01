@@ -4,7 +4,7 @@ Now that we have discussed what a graph is, let's move on to further understandi
 
 Different graph databases may differ slightly in terms of terminology, but in the end, they all talk about vertices, edges, and properties. As for more advanced features such as labels, indexes, constraints, TTL, long tasks, stored procedures, and UDFs, these advanced features will vary significantly from one graph database to another.
 
-Graph databases use graphs to store data, and graphs are one of the closest to highly flexible, high-performance data structures. A graph database is a storage engine specifically designed to store and retrieve large information, which efficiently stores data as vertices and edges and allows high-performance retrieval and querying of these vertex-edge structures. We can also add properties to these vertices and edges.
+Graph databases use graphs to store data, and the graph structure is one of the structures that are closest to high flexibility and high performance. A graph database is a storage engine specifically designed to store and retrieve large information, which efficiently stores data as vertices and edges and allows high-performance retrieval and querying of these vertex-edge structures. We can also add properties to these vertices and edges.
 
 ## Third-party services market predictions
 
@@ -38,11 +38,11 @@ Until recently, graph databases and related graph technologies were ranked in th
 
 [^Gartner2]: https://www.gartner.com/smarterwithgartner/gartner-top-10-data-and-analytics-trends-for-2021/
 
-It can be noted that Gartner's predictions match the DB-Engines ranking well. There is usually a period of rapid bubble development, then a plateau period, followed by a new bubble period due to the emergence of new technologies, and then a plateau period. And so on in a spiral.
+It can be noted that Gartner's predictions match the DB-Engines ranking well. There is usually a period of rapid bubble development, then a plateau period, followed by a new bubble period due to the emergence of new technologies, and then a plateau period again. 
 
 ### Market size of graph databases
 
-According to statistics and forecasts from Verifiedmarketresearc[^ver], fnfresearch[^fnf], MarketsandMarkets[^mam], and Gartner[^gar], the global graph database market size to grow from about USD 0.8 billion in 2019 to USD 3-4 billion by 2026, at a Compound Annual Growth Rate (CAGR) of about 25%, which corresponds to about 5%-10% market share of the global database market. 
+According to statistics and forecasts from Verifiedmarketresearc[^ver], fnfresearch[^fnf], MarketsandMarkets[^mam], and Gartner[^gar], the global graph database market size is about to grow from about USD 0.8 billion in 2019 to USD 3-4 billion by 2026, at a Compound Annual Growth Rate (CAGR) of about 25%, which corresponds to about 5%-10% market share of the global database market. 
 
 ![Image](https://www.verifiedmarketresearch.com/wp-content/uploads/2020/10/Graph-Database-Market-Size.jpg)
 
@@ -101,9 +101,10 @@ The data model property graph was first conceived in 2000. The founders of Neo4j
 
 Although this network model greatly improved productivity, its performance has been poor. So Johan Svensson, Neo4j co-founder, put a lot of effort into implementing a native data management system, that is Neo4j. For the first few years, Neo4j was successful as an in-house product. In 2007, the intellectual property of Neo4j was transferred to an independent database company. 
 
-In the first public release of Neo4j ( Neo4j 1.4，2011), the data model was consisted of vertices and typed edges. Vertices and edges have properties. The early versions of Neo4j did not have indexes. Applications had to construct their search structure from the root vertex. Because this was very unwieldy for the applications, Neo4j 2.0 (2013.12) introduced a new concept label on vertices. Based on labels, Neo4j can index some predefined vertex properties.
+In the first public release of Neo4j ( Neo4j 1.4, 2011), the data model was consisted of vertices and typed edges. Vertices and edges have properties. The early versions of Neo4j did not have indexes. Applications had to construct their search structure from the root vertex. Because this was very unwieldy for the applications, Neo4j 2.0 (2013.12) introduced a new concept label on vertices. Based on labels, Neo4j can index some predefined vertex properties.
 
 "Vertex", "Relationship", "Property", "Relationships can only have one label.", "Vertices can have zero or multiple labels.". All these concepts form the data model definitions for Neo4j property graphs. With the later addition of indexing, Cypher became the main way of interacting with Neo4j. This is because the application developer only needs to focus on the data itself, not on the search structure that the developer built himself as mentioned above.
+
 #### The creation of Gremlin 
 
 Gremlin is a graph query language based on Apache TinkerPop, which is close in style to a sequence of function (procedure) calls. Initially, Neo4j was queried through the Java API. applications could embed the query engine as a library into the application and then use the API to query the graph.
@@ -179,7 +180,7 @@ Strictly speaking, Neo4j also offers several distributed capabilities, which are
   Return movie.title AS title
       UNION   
   USE graphB  
-  MATCH （move:Movie)
+  MATCH (move:Movie)
   RETURN movie.title AS title
   ```
 
@@ -197,7 +198,7 @@ The following picture shows the growth of Titan and Neo4j stars on Github.com fr
 
 After Aurelius (Titan) was acquired by DataStax in 2015, Titan was gradually transformed into a closed-source commercial product(DataStax Enterprise Graph).
 
-After the acquisition of Aurelius(Titan), there has been a strong demand for an open-source distributed graph database, and there were not many mature and active products in the market. In the era of big data, data is still being generated in a steady stream, far faster than Moore's Law. The Linux Foundation, along with some technology giants (Expero, Google, GRAKN.AI, Hortonworks, IBM, and Amazon) replicated and forked the original Titan project and started it as a new project  JanusGraph[^Janus]. Most of the community work including development, testing, release, and promotion, has been gradually shifted to the new JanusGraph。
+After the acquisition of Aurelius(Titan), there has been a strong demand for an open-source distributed graph database, and there were not many mature and active products in the market. In the era of big data, data is still being generated in a steady stream, far faster than Moore's Law. The Linux Foundation, along with some technology giants (Expero, Google, GRAKN.AI, Hortonworks, IBM, and Amazon) replicated and forked the original Titan project and started it as a new project  JanusGraph[^Janus]. Most of the community work including development, testing, release, and promotion, has been gradually shifted to the new JanusGraph.
 
 [^Janus]: https://github.com/JanusGraph/janusgraph
 

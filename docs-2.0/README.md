@@ -1,6 +1,6 @@
 # Welcome to Nebula Graph {{ nebula.release }} Documentation
 
-!!! note "[View release notes](20.appendix/releasenote.md)"
+!!! note "[View release notes](20.appendix/release-note.md)"
 
     This manual is revised on {{ now().year }}-{{ now().month }}-{{ now().day }}, with GitHub commit [{{ git.short_commit }}](https://github.com/vesoft-inc/nebula-docs/commits/v{{nebula.release}}).
 
@@ -8,7 +8,7 @@ Nebula Graph is a distributed, scalable, and lightning-fast graph database. It i
 
 ## Getting started
 
-* [Learning path](20.appendix/learning-path.md)
+* [Learning path](20.appendix/learning-path.md) & [Get Nebula Graph Certifications](https://academic.nebula-graph.io/?lang=EN_US)
 * [What is Nebula Graph](1.introduction/1.what-is-nebula-graph.md)
 * [Quick start](2.quick-start/1.quick-start-workflow.md)
 * [Preparations before deployment](4.deployment-and-installation/1.resource-preparations.md)
@@ -18,8 +18,9 @@ Nebula Graph is a distributed, scalable, and lightning-fast graph database. It i
   
 ## Other Sources
 
+- [To cite Nebula Graph](https://arxiv.org/abs/2206.07278)
 - [Nebula Graph Homepage](https://nebula-graph.io/)
-- [Release notes](20.appendix/releasenote.md)
+- [Release notes](20.appendix/release-note.md)
 - [Forum](https://discuss.nebula-graph.io/)
 - [Blogs](https://nebula-graph.io/posts/)
 - [Videos](https://www.youtube.com/channel/UC73V8q795eSEMxDX4Pvdwmw)
