@@ -75,7 +75,17 @@ plugins:
         - 4.deployment-and-installation/5.zone.md
         - 4.deployment-and-installation/3.upgrade-nebula-graph/upgrade-nebula-from-200-to-latest.md
         - nebula-cloud/*
-
+        - nebula-cloud.md
+        # When publishing a version of a document that includes Enterprise Edition, annotation the following page
+        # begin
+        - 3.ngql-guide/6.functions-and-expressions/17.ES-function.md
+        - 4.deployment-and-installation/deploy-license.md
+        - 5.configurations-and-logs/2.log-management/audit-log.md
+        - 7.data-security/1.authentication/4.ldap.md
+        - nebula-operator/8.custom-cluster-configurations/8.3.balance-data-when-scaling-storage.md
+        - synchronization-and-migration/replication-between-clusters.md
+        - 20.appendix/release-notes/nebula-ent-release-note.md
+        # end
 # Exclude the file with the following file name.
 #        - abc.md
 # Exclude files with regular expressions (regexes)
@@ -132,12 +142,16 @@ extra:
     branch: master
     tag: master
   studio:
-    release: 3.3.1
-    tag: v3.3.0
+    base111b: 1.1.1-beta
+    base220: 2.2.1
+    base300: 3.0.0
+    release: 3.4.1
+    branch: release-3.4
+    tag: v3.4.1
   explorer:
-    release: 3.0.0
-    branch: reelase-3.0
-    tag: v3.0.0
+    release: 3.1.0
+    branch: release-3.1
+    tag: v3.1.0
   exchange_ent:
     release: 3.0.0
     branch: v3.0.0
@@ -147,19 +161,21 @@ extra:
     branch: v3.0.0
     tag: v3.0.0
   importer:
-    release: 3.1.0
-    branch: release-3.1
-    tag: v3.1.0
+    release: 3.2.0
+    branch: release-3.2
+    tag: v3.2.0
   algorithm:
     release: 3.0.0
     branch: v3.0.0
     tag: v3.0.0
   plato:
-    release: 3.1.0
-    branch: release-3.1
-    tag: v3.1.0
+    release: 3.2.0
+    branch: release-3.2
+    tag: v3.2.0
   dag:
-    release: 1.0.0
+    release: 3.2.1
+    branch: release-3.2
+    tag: v3.2.1
   sparkconnector:
     release: 3.0.0
     branch: v3.0.0
@@ -169,30 +185,30 @@ extra:
     branch: v3.0.0
     tag: v3.0.0
   dockercompose:
-    release: 3.1.0
-    branch: release-3.1
-    tag: v3.1.0
+    release: 3.2.0
+    branch: release-3.2
+    tag: v3.2.0
   dashboard:
-    release: 1.1.1
-    tag: v1.1.1
+    release: 3.1.0
+    tag: v3.1.0
     base100: 1.0.0
-    branch: v1.1.1
+    branch: release-3.1
   dashboard_ent:
-    release: 3.0.4
-    tag: v3.0.4
-    branch: release-3.0
+    release: 3.1.1
+    tag: v3.1.1
+    branch: release-3.1
   console:
-    release: 3.0.0
-    branch: v3.0.0
-    tag: v3.0.0
+    release: 3.2.0
+    branch: release-3.2
+    tag: v3.2.0
   br:
-    release: 0.6.0
+    release: 0.6.1
     branch: master
-    tag: v0.6.0
+    tag: v0.6.1
   cpp:
-    release: 3.0.0
-    branch: v3.0.0
-    tag: v3.0.0
+    release: 3.0.2
+    branch: release-3.0
+    tag: v3.0.2
   java:
     release: 3.0.0
     branch: v3.0.0
@@ -202,27 +218,35 @@ extra:
     branch: release-3.1
     tag: v3.1.0
   go:
-    release: 3.1.0
-    branch: release-3.1
-    tag: v3.1.0
+    release: 3.2.0
+    branch: release-3.2
+    tag: v3.2.0
   bench:
     release: 1.2.0
     branch: release-1.2
     tag: v1.2.0
   operator:
-    release: 1.1.0
-    tag: v1.1.0
-    branch: release-1.1
+    release: 1.2.0
+    tag: v1.2.0
+    branch: release-1.2
     upgrade_from: 3.0.0
     upgrade_to: 3.1.x
   exporter:
-    release: 3.1.0
-    branch: release-3.1
-    tag: v3.1.0
+    release: 3.2.0
+    branch: release-3.2
+    tag: v3.2.0
   gateway:
-    release: 3.1.2
-    branch: release-3.1
-    tag: v3.1.2
+    release: 3.2.0
+    branch: release-3.2
+    tag: v3.2.0
+  cloud:
+    azureRelease: 3.1.1 # The latest core version that Azure Cloud is compatible with
+    aliyunRelease: 3.1.1 # The latest core version that Alibaba Cloud is compatible with
+    azureLatestRelease: 3.1.0 # The latest doc version that supports Azure Cloud
+    aliyunLatestRelease: 3.1.0 # The latest doc version that supports Alibaba Cloud
+  ent:
+    ent_begin: <!--         # change to "<!-->" when releasing core-ent
+    ent_end: -->             # change to "<!-->" when releasing core-ent
 
 nav:
   - About: README.md
@@ -296,7 +320,7 @@ nav:
           - Conditional expressions: 3.ngql-guide/6.functions-and-expressions/5.conditional-expressions.md
           - Predicate functions: 3.ngql-guide/6.functions-and-expressions/8.predicate.md
           - Geography functions: 3.ngql-guide/6.functions-and-expressions/14.geo.md
-         - Elasticsearch functions: 3.ngql-guide/6.functions-and-expressions/17.ES-function.md
+#ent          - Elasticsearch functions: 3.ngql-guide/6.functions-and-expressions/17.ES-function.md
           - User-defined functions: 3.ngql-guide/6.functions-and-expressions/9.user-defined-functions.md
 
       - General queries statements:
@@ -410,14 +434,14 @@ nav:
           - Deploy a Nebula Graph cluster on multiple servers: 4.deployment-and-installation/2.compile-and-install-nebula-graph/deploy-nebula-graph-cluster.md
           - Deploy Nebula Grpah with ecosystem tools: 4.deployment-and-installation/2.compile-and-install-nebula-graph/6.deploy-nebula-graph-with-peripherals.md
       - Deploy standalone Nebula Graph: 4.deployment-and-installation/standalone-deployment.md
-      - Deploy licenses for Nebula Graph Enterprise Edition clusters: 4.deployment-and-installation/deploy-license.md
+#ent      - Deploy licenses for Nebula Graph Enterprise Edition clusters: 4.deployment-and-installation/deploy-license.md
       - Manage Service: 4.deployment-and-installation/manage-service.md
       - Connect to Service: 4.deployment-and-installation/connect-to-nebula-graph.md
       - Manage Storage host: 4.deployment-and-installation/manage-storage-host.md
 #      - Manage zone: 4.deployment-and-installation/5.zone.md
       - Upgrade:
           - Upgrade Nebula Graph to the latest version: 4.deployment-and-installation/3.upgrade-nebula-graph/upgrade-nebula-graph-to-latest.md
-#          - Upgrade Nebula Graph from v2.0.x to the current version: 4.deployment-and-installation/3.upgrade-nebula-graph/upgrade-nebula-from-200-to-latest.md
+          - Upgrade Nebula Graph from v3.x to the current version: 4.deployment-and-installation/3.upgrade-nebula-graph/upgrade-nebula-from-300-to-latest.md
       - Uninstall Nebula Graph: 4.deployment-and-installation/4.uninstall-nebula-graph.md
 
   - Configurations and logs:
@@ -429,7 +453,7 @@ nav:
           - Kernel configurations: 5.configurations-and-logs/1.configurations/6.kernel-config.md
       - Log management:
           - Runtime logs: 5.configurations-and-logs/2.log-management/logs.md
-          - Audit logs(Enterprise): 5.configurations-and-logs/2.log-management/audit-log.md
+#ent          - Audit logs(Enterprise): 5.configurations-and-logs/2.log-management/audit-log.md
 
   - Monitor and metrics:
       - Query Nebula Graph metrics: 6.monitor-and-metrics/1.query-performance-metrics.md
@@ -439,7 +463,7 @@ nav:
           - Authentication: 7.data-security/1.authentication/1.authentication.md
           - User management: 7.data-security/1.authentication/2.management-user.md
           - Roles and privileges: 7.data-security/1.authentication/3.role-list.md
-          - OpenLDAP authentication: 7.data-security/1.authentication/4.ldap.md
+#ent          - OpenLDAP authentication: 7.data-security/1.authentication/4.ldap.md
       - SSL: 7.data-security/4.ssl.md
 
   - Backup & Restore:
@@ -452,7 +476,7 @@ nav:
 
   - Synchronization & Migration:
       - Load balance: synchronization-and-migration/2.balance-syntax.md
-      - Synchronize between two clusters: synchronization-and-migration/replication-between-clusters.md
+#ent      - Synchronize between two clusters: synchronization-and-migration/replication-between-clusters.md
 
   - Practices:
     - Compaction: 8.service-tuning/compaction.md
@@ -471,7 +495,7 @@ nav:
     - Nebula Python: 14.client/5.nebula-python-client.md
     - Nebula Go: 14.client/6.nebula-go-client.md
 
-  - Nebula Graph Cloud: nebula-cloud.md
+#  - Nebula Graph Cloud: nebula-cloud.md
 
 #  - Nebula Graph Cloud:
 #    - What is Nebula Graph Cloud: nebula-cloud/1.what-is-cloud.md
@@ -489,7 +513,6 @@ nav:
 
 
   - Nebula Studio:
-    - Change Log: nebula-studio/about-studio/st-ug-release-note.md
     - About Nebula Studio:
       - What is Nebula Studio: nebula-studio/about-studio/st-ug-what-is-graph-studio.md
       - Limitations: nebula-studio/about-studio/st-ug-limitations.md
@@ -533,6 +556,7 @@ nav:
         - Cluster information: nebula-dashboard-ent/4.cluster-operator/3.cluster-information.md
         - Cluster Diagnostics: nebula-dashboard-ent/4.cluster-operator/7.cluster-diagnosis.md  
         - Cluster operations: nebula-dashboard-ent/4.cluster-operator/4.manage.md
+        - Backup and restore: nebula-dashboard-ent/4.cluster-operator/8.backup-and-restore.md
         - Operation records: nebula-dashboard-ent/4.cluster-operator/5.operation-record.md
         - Other settings: nebula-dashboard-ent/4.cluster-operator/6.settings.md
       - Task Center: nebula-dashboard-ent/10.tasks.md
@@ -550,18 +574,36 @@ nav:
       - Connect to Nebula Graph: nebula-explorer/deploy-connect/ex-ug-connect.md
       - Nebula Explorer License: nebula-explorer/deploy-connect/3.explorer-license.md
     - Page overview: nebula-explorer/ex-ug-page-overview.md
-    - Create a schema: nebula-explorer/10.create-schema.md
-    - Import data: nebula-explorer/11.import-data.md
-    - Choose graph spaces: nebula-explorer/13.choose-graphspace.md
-    - Start querying: nebula-explorer/ex-ug-query-exploration.md
-    - Vertex Filter: nebula-explorer/node-filtering.md
-    - Graph exploration: nebula-explorer/ex-ug-graph-exploration.md
-    - Visual Query: nebula-explorer/12.query-visually.md
+    - Database management:
+      - Schema management: nebula-explorer/db-management/10.create-schema.md
+      - Data import: nebula-explorer/db-management/11.import-data.md
+      - Console: nebula-explorer/db-management/explorer-console.md
+    - Graph explorer:
+      - Choose graph space: nebula-explorer/graph-explorer/13.choose-graphspace.md
+      - Start querying: nebula-explorer/graph-explorer/ex-ug-query-exploration.md
+      - Vertex Filter: nebula-explorer/graph-explorer/node-filtering.md
+      - Graph exploration: nebula-explorer/graph-explorer/ex-ug-graph-exploration.md
+      - Graph computing: nebula-explorer/graph-explorer/graph-algorithm.md
+    - Visual query: nebula-explorer/12.query-visually.md
     - Canvas: 
-      - Overview: nebula-explorer/canvas-operations/canvas-overview.md
+      - Canvas overview: nebula-explorer/canvas-operations/canvas-overview.md
       - Visualization modes: nebula-explorer/canvas-operations/visualization-mode.md
-      - Snapshots: nebula-explorer/canvas-operations/canvas-snapshot.md
-    - Explorer console: nebula-explorer/explorer-console.md
+      - Canvas snapshots: nebula-explorer/canvas-operations/canvas-snapshot.md
+    - Workflow:
+      - Workflow overview: nebula-explorer/workflow/workflows.md
+      - Resource preparations: nebula-explorer/workflow/1.prepare-resources.md
+      - Workflow example: nebula-explorer/workflow/2.create-workflow.md
+      - Workflow management: nebula-explorer/workflow/3.workflow-management.md
+      - Job management: nebula-explorer/workflow/4.jobs-management.md
+      - Workflow API:
+        - API overview: nebula-explorer/workflow/workflow-api/workflow-api-overview.md
+        - Add a new job: nebula-explorer/workflow/workflow-api/api-post-jobs.md
+        - Get a list of all jobs: nebula-explorer/workflow/workflow-api/api-get-jobs.md
+        - Get a list of jobs for a specified workflow: nebula-explorer/workflow/workflow-api/api-get-workflow-jobs.md
+        - Query details for a specified job: nebula-explorer/workflow/workflow-api/api-desc-job.md
+        - Cancel a running job: nebula-explorer/workflow/workflow-api/api-cancel-job.md
+        - Get the result data of a specified task: nebula-explorer/workflow/workflow-api/api-desc-task.md
+
     - Basic operations and shortcuts: nebula-explorer/ex-ug-shortcuts.md
 
   - Nebula Importer:
@@ -604,7 +646,7 @@ nav:
       - Configure clusters:
         - Custom configuration parameters for a Nebula Graph cluster: nebula-operator/8.custom-cluster-configurations/8.1.custom-conf-parameter.md
         - Reclaim PVs: nebula-operator/8.custom-cluster-configurations/8.2.pv-reclaim.md 
-        - Balance storage data after scaling out: nebula-operator/8.custom-cluster-configurations/8.3.balance-data-when-scaling-storage.md
+#ent        - Balance storage data after scaling out: nebula-operator/8.custom-cluster-configurations/8.3.balance-data-when-scaling-storage.md
       - Upgrade Nebula Graph clusters: nebula-operator/9.upgrade-nebula-cluster.md
       - Connect to Nebula Graph databases: nebula-operator/4.connect-to-nebula-graph-service.md
       - Self-healing: nebula-operator/5.operator-failover.md
@@ -629,7 +671,13 @@ nav:
   - Nebula Bench: nebula-bench.md
 
   - Appendix:
-      - Release Note: 20.appendix/release-note.md
+      - Release Note:
+        - Nebula Graph Community Edition: 20.appendix/release-notes/nebula-comm-release-note.md
+#ent        - Nebula Graph Enterprise Edition: 20.appendix/release-notes/nebula-ent-release-note.md
+        - Nebula Studio: 20.appendix/release-notes/studio-release-note.md
+        - Nebula Dashboard Community Edition: 20.appendix/release-notes/dashboard-comm-release-note.md
+        - Nebula Dashboard Enterprise Edition: 20.appendix/release-notes/dashboard-ent-release-note.md
+        - Nebula Explorer: 20.appendix/release-notes/explorer-release-note.md
       - Learning path: 20.appendix/learning-path.md
       - About Nebula Graph licenses: 20.appendix/8.about-license.md
       - FAQ: 20.appendix/0.FAQ.md

@@ -1,12 +1,14 @@
-Nebula Graph supports managing services with scripts or systemd. This topic will describe the two methods in detail.
+Nebula Graph supports managing services with scripts. 
 
+{{ ent.ent_begin }}
 !!! enterpriseonly
 
-    Managing Nebula Graph with systemd is only available in the Nebula Graph Enterprise Edition.
+    You can also manage Nebula Graph with systemd in the Nebula Graph Enterprise Edition.
 
 !!! danger
 
     The two methods are incompatible. It is recommended to use only one method in a cluster.
+{{ ent.ent_end }}
 
 ## Manage services with script
 
@@ -39,6 +41,8 @@ $ sudo /usr/local/nebula/scripts/nebula.service
 |`storaged`|Set the Storage Service as the target service.|
 |`all`|Set all the Nebula Graph services as the target services.|
 
+{{ ent.ent_begin }}
+
 ## Manage services with systemd
 
 For easy maintenance, Nebula Graph Enterprise Edition supports managing services with systemd. You can start, stop, restart, and check services with `systemctl` commands.
@@ -68,6 +72,8 @@ $ systemctl <start | stop | restart | status > <nebula | nebula-metad | nebula-g
 |`nebula-graphd`|Set the Graph Service as the target service.|
 |`nebula-storaged`|Set the Storage Service as the target service.|
 
+{{ ent.ent_end }}
+
 ## Start Nebula Graph
 
 ### In non-container environment
@@ -84,6 +90,7 @@ $ sudo /usr/local/nebula/scripts/nebula.service start all
 [INFO] Done
 ```
 
+{{ ent.ent_begin }}
 Users can also run the following command:
 
 ```bash
@@ -95,6 +102,7 @@ If users want to automatically start Nebula Graph when the machine starts, run t
 ```bash
 $ systemctl enable nebula
 ```
+{{ ent.ent_begin }}
 
 ### In docker container (deployed with docker-compose)
 
@@ -135,11 +143,13 @@ $ sudo /usr/local/nebula/scripts/nebula.service stop all
 [INFO] Done
 ```
 
+{{ ent.ent_begin }}
 Users can also run the following command:
 
 ```bash
 $ systemctl stop nebula
 ```
+{{ ent.ent_end }}
 
 ### In docker container (deployed with docker-compose)
 
@@ -204,6 +214,7 @@ $ sudo /usr/local/nebula/scripts/nebula.service status all
     [INFO] nebula-storaged: Running as 25646, Listening on 9779
     ```
 
+{{ ent.ent_begin }}
 Users can also run the following command:
 
 ```bash
@@ -222,6 +233,7 @@ $ systemctl status nebula
 3月 28 04:13:24 xxxxxx systemd[1]: Started nebula.service.
 ...
 ```
+{{ ent.ent_end }}
 
 The Nebula Graph services consist of the Meta Service, Graph Service, and Storage Service. The configuration files for all three services are stored in the `/usr/local/nebula/etc/` directory by default. You can check the configuration files according to the returned result to troubleshoot problems.
 

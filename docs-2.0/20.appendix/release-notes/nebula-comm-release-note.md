@@ -1,14 +1,8 @@
 # Nebula Graph {{ nebula.release }} release notes
 
-## Enterprise edition
-
-### Feature
-
-- Support the [Elasticsearch query functions](../3.ngql-guide/6.functions-and-expressions/17.ES-function.md) to send a GET request to an independently deployed Elasticsearch to read data. [#924](https://github.com/vesoft-inc/nebula-ent/pull/924)
+## Enhancement
 
 - Support the [extract() function](../3.ngql-guide/6.functions-and-expressions/2.string.md). [#4098](https://github.com/vesoft-inc/nebula/pull/4098)
-
-### Enhancement
 
 - Optimized the configuration file and added some configurations. [#4310](https://github.com/vesoft-inc/nebula/pull/4310)
 
@@ -34,7 +28,7 @@
 
 - Optimized memory allocation with Arena Allocator. [#4239](https://github.com/vesoft-inc/nebula/pull/4239)
 
-### Bugfix
+## Bugfix
 
 - Fixed the web service crash when receiving some special attack messages. [#4334](https://github.com/vesoft-inc/nebula/pull/4334)
 
@@ -61,6 +55,10 @@
 - Enhanced the error message for operators `AND` and `OR`. [#4304](https://github.com/vesoft-inc/nebula/pull/4304)
 
 - Fixed the bug that there were no stats under the condition of using indexes. [#4353](https://github.com/vesoft-inc/nebula/pull/4353)
+
+- Fixed the crash when having a put request with no body.[#4405](https://github.com/vesoft-inc/nebula/pull/4405)
+
+- Fixed the storage service crash when the length of the VID in a vertex or edge deletion statement exceeds the defined length on an indexed base.[#4406](https://github.com/vesoft-inc/nebula/pull/4406)
 
 ## Legacy versions
 
