@@ -1,14 +1,14 @@
 # Algorithm overview
 
-Graph computing can detect the graph structure, such as the communities in a graph and the division of a graph. It can also reveal the inherent characteristics of the correlation between various vertexes, such as the centrality and similarity of the vertices. This topic introduces the algorithms and parameters supported by Nebula Graph.
+Graph computing can detect the graph structure, such as the communities in a graph and the division of a graph. It can also reveal the inherent characteristics of the correlation between various vertexes, such as the centrality and similarity of the vertices. This topic introduces the algorithms and parameters supported by NebulaGraph.
 
 <!--
-Nebula Graph supports some graph computing tools. This topic describes the algorithms and parameters supported by these tools.
+NebulaGraph supports some graph computing tools. This topic describes the algorithms and parameters supported by these tools.
 -->
 
 !!! note
 
-    This topic only introduces the parameters of Nebula Analytics. For details about the parameters of Nebula Algorithm, see [algorithm](https://github.com/vesoft-inc/nebula-algorithm/tree/{{algorithm.branch}}/example/src/main/scala/com/vesoft/nebula/algorithm).
+    This topic only introduces the parameters of NebulaGraph Analytics. For details about the parameters of NebulaGraph Algorithm, see [algorithm](https://github.com/vesoft-inc/nebula-algorithm/tree/{{algorithm.branch}}/example/src/main/scala/com/vesoft/nebula/algorithm).
 
 <!--
 !!! note
@@ -22,7 +22,7 @@ Nebula Graph supports some graph computing tools. This topic describes the algor
 
     - If the data source comes from HDFS, users need to specify a CSV file that contains `src` and `dst` columns. Some algorithms also need to contain a `weight` column.
 
-    - If the data source comes from Nebula Graph, users need to specify the edge types that provide `src` and `dst` columns. Some algorithms also need to specify the properties of the edge types as `weight` columns.
+    - If the data source comes from NebulaGraph, users need to specify the edge types that provide `src` and `dst` columns. Some algorithms also need to specify the properties of the edge types as `weight` columns.
 
 ## Node importance measurement
 
@@ -33,7 +33,7 @@ The PageRank algorithm calculates the relevance and importance of vertices based
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm
+- NebulaGraph Algorithm
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
@@ -41,7 +41,7 @@ Parameter descriptions are as follows:
   |`resetProb`|`0.15`||
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 
@@ -66,7 +66,7 @@ The KCore algorithm is used to calculate the subgraph composed of no vertexes le
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm
+- NebulaGraph Algorithm
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
@@ -74,7 +74,7 @@ Parameter descriptions are as follows:
   |`degree`|`1`||
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 
@@ -104,12 +104,12 @@ The DegreeCentrality algorithm is used to find the popular vertexes in a graph. 
 
 !!! note
 
-    Nebula Analytics only estimates DegreeCentrality roughly.
+    NebulaGraph Analytics only estimates DegreeCentrality roughly.
 
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm（这里叫DegreeStatic？）
+- NebulaGraph Algorithm（这里叫DegreeStatic？）
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
@@ -119,7 +119,7 @@ Parameter descriptions are as follows:
   |``|``||
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 
@@ -159,7 +159,7 @@ The DegreeWithTime algorithm is used to count neighbors based on the time range 
 
 !!! note
 
-    This algorithm is supported by Nebula Analytics only.
+    This algorithm is supported by NebulaGraph Analytics only.
 
 Parameter descriptions are as follows:
 
@@ -202,14 +202,14 @@ The BetweennessCentrality algorithm is used to detect the amount of influence a 
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm
+- NebulaGraph Algorithm
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
   |`maxIter`|`5`|Maximum number of iterations.|
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 
@@ -234,7 +234,7 @@ The ClosenessCentrality algorithm is used to calculate the reciprocal of the ave
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm
+- NebulaGraph Algorithm
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
@@ -244,7 +244,7 @@ Parameter descriptions are as follows:
   |``|``||
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 
@@ -268,7 +268,7 @@ The APSP (Full Graph Shortest Path) algorithm is used to find all shortest paths
 
 !!! note
 
-    This algorithm is supported by Nebula Analytics only.
+    This algorithm is supported by NebulaGraph Analytics only.
 
 Parameter descriptions are as follows:
 
@@ -287,14 +287,14 @@ The SSSP (Single source shortest Path) algorithm is used to calculate the shorte
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm
+- NebulaGraph Algorithm
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
   |`sourceid`|-|The VID of the source vertex.|
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 
@@ -316,7 +316,7 @@ The BFS (Breadth First traversal) algorithm is a basic graph traversal algorithm
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm
+- NebulaGraph Algorithm
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
@@ -326,7 +326,7 @@ Parameter descriptions are as follows:
   |``|``||
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 
@@ -342,35 +342,6 @@ Parameter descriptions are as follows:
     |`ROOT`|Determined by `vid_type`| The VID of the source vertex.|
     |`VISITED`|int| Outputs the number of the vertex accessed by `ROOT`.|
 
-<!--
-### Node2Vec
-
-The Node2Vec algorithm proposed a more reasonable graph feature learning method based on DeepWalk, and proposed a semi-supervised algorithm for scalable feature learning in networks. SGD was used to optimize a custom graph-based objective function, which could maximize the network domain information of nodes reserved in d-dimensional feature space. Based on the random walk, a second order random walk process is designed, which is equivalent to an extension of DeepWalk algorithm, and preserves the graph characteristics of neighbor nodes. Applicable to node function similarity comparison, node structure similarity comparison, community clustering and other scenarios.R
-
-!!! note
-    
-    This algorithm is supported by Nebula Algorithm only.
-
-Parameter descriptions are as follows:
-
-|Parameter|Predefined value|Description|
-|:--|:--|:--|
-|`maxIter`|`10`|Maximum number of iterations.|
-|`lr`|`0.025`||
-|`dataNumPartition`|`10`||
-|`modelNumPartition`|`10`||
-|`dim`|`10`|The map dimensions.|
-|`window`|`3`||
-|`walkLength`|`5`| The random step size.|
-|`numWalks`|`3`| The number of random steps for each node.|
-|`p`|`1.0`| The rollback parameters.|
-|`q`|`1.0`|The forward parameters.|
-|`directed`|`false`||
-|`degree`|`30`||
-|`embSeparate`|`","`||
-|`modelPath`|`"hdfs://127.0.0.1:9000/model"`||
--->
-
 ## Community discovery
 
 ### LPA
@@ -380,7 +351,7 @@ The LPA (label propagation) algorithm is a semi-supervised learning method based
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm
+- NebulaGraph Algorithm
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
@@ -390,7 +361,7 @@ Parameter descriptions are as follows:
   |``|``||
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 
@@ -414,7 +385,7 @@ The HANP (Hop Preference & Node Preference) algorithm is an optimization algorit
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm
+- NebulaGraph Algorithm
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
@@ -423,7 +394,7 @@ Parameter descriptions are as follows:
   |`preference`|`1.0`||
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 
@@ -447,19 +418,19 @@ The ConnectedComponent algorithm is used to calculate a subgraph of a graph in w
 
 !!! note
 
-    Nebula Analytics only supports Weakly Connected Component.
+    NebulaGraph Analytics only supports Weakly Connected Component.
 
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm
+- NebulaGraph Algorithm
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
   |`maxIter`|`10`|Maximum number of iterations.|
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 
@@ -482,7 +453,7 @@ The Louvain algorithm is a community discovery algorithm based on modularity. Th
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm
+- NebulaGraph Algorithm
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
@@ -491,7 +462,7 @@ Parameter descriptions are as follows:
   |`tol`|`0.5`||
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 
@@ -518,7 +489,7 @@ The TriangleCount algorithm is used to count the number of triangles in a graph.
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm
+- NebulaGraph Algorithm
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
@@ -528,7 +499,7 @@ Parameter descriptions are as follows:
   |``|``||
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 
@@ -559,6 +530,49 @@ Parameter descriptions are as follows:
     |`VID2`|The same with `VID`| Outputs the ID of the vertex B that forms the triangle.|
     |`VID3`|The same with `VID`| Outputs the ID of the vertex C that forms the triangle.|
 
+
+### Node2Vec
+
+The Node2Vec algorithm proposed a more reasonable graph feature learning method based on DeepWalk, and proposed a semi-supervised algorithm for scalable feature learning in networks. SGD was used to optimize a custom graph-based objective function, which could maximize the network domain information of nodes reserved in d-dimensional feature space. Based on the random walk, a second order random walk process is designed, which is equivalent to an extension of DeepWalk algorithm, and preserves the graph characteristics of neighbor nodes. Applicable to node function similarity comparison, node structure similarity comparison, community clustering and other scenarios.R
+
+Parameter descriptions are as follows:
+
+
+<!--
+- NebulaGraph Algorithm
+
+  |Parameter|Predefined value|Description|
+  |:--|:--|:--|
+  |`maxIter`|`10`|Maximum number of iterations.|
+  |`lr`|`0.025`||
+  |`dataNumPartition`|`10`||
+  |`modelNumPartition`|`10`||
+  |`dim`|`10`|The map dimensions.|
+  |`window`|`3`||
+  |`walkLength`|`5`| The random step size.|
+  |`numWalks`|`3`| The number of random steps for each node.|
+  |`p`|`1.0`| The rollback parameters.|
+  |`q`|`1.0`|The forward parameters.|
+  |`directed`|`false`||
+  |`degree`|`30`||
+  |`embSeparate`|`","`||
+  |`modelPath`|`"hdfs://127.0.0.1:9000/model"`||
+-->
+
+- NebulaGraph Analytics
+  - Input parameters
+    |Parameter|Predefined value|Description|
+    |:--|:--|:--|
+    |`is_weighted`|`false`|  Random walk with bias or not.|
+    |`p`|`1.0`| The backward bias for random walk.|
+    |`q`|`0.5`| The forward bias for random walk.|
+    |`epoch`|`1`| The number of iterations.|
+    |`step`|`10`| The number of steps per iteration.|
+    |`rate`|`0.02`| The rate of the random walk.|
+
+  - Output parameters
+    Output multiple columns where vertices in the same column are associated.
+
 ## Clustering
 
 ### ClusteringCoefficient
@@ -568,7 +582,7 @@ The ClusteringCoefficient algorithm is used to calculate the clustering degree o
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm
+- NebulaGraph Algorithm
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
@@ -578,7 +592,7 @@ Parameter descriptions are as follows:
   |``|``||
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 
@@ -611,7 +625,7 @@ The Jaccard algorithm is used to calculate the similarity of two vertexes (or se
 Parameter descriptions are as follows:
 
 <!--
-- Nebula Algorithm
+- NebulaGraph Algorithm
 
   |Parameter|Predefined value|Description|
   |:--|:--|:--|
@@ -621,7 +635,7 @@ Parameter descriptions are as follows:
   |``|``||
 -->
 
-- Nebula Analytics
+- NebulaGraph Analytics
 
   - Input parameters
 

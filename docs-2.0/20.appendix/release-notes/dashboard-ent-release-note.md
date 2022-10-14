@@ -1,4 +1,9 @@
-# Nebula Dashboard Enterprise Edition release notes
+# NebulaGraph Dashboard Enterprise Edition release notes
+
+## Enterprise Edition 3.1.2
+
+- Bugfix
+  - Fixed the startup problem of the `nebula-stats-exporter` service with the DEB or RPM package.
 
 ## Enterprise Edition 3.1.1
 
@@ -8,20 +13,20 @@
 ## Enterprise Edition 3.1.0
 
 - Feature
-  - Support [Upgrading the Nebula Graph version in a specified cluster](../../nebula-dashboard-ent/4.cluster-operator/4.manage.md).
-  - Support [full backup and full restore](../../nebula-dashboard-ent/4.cluster-operator/8.backup-and-restore.md) functions.
-  - Support [managing the installation packages](../../nebula-dashboard-ent/11.manage-package.md).
-  - Support using [SQLite database](../../nebula-dashboard-ent/2.deploy-connect-dashboard-ent.md) when deploying the Nebula Dashboard.
+  - Support [Upgrading the NebulaGraph version in a specified cluster](../../nebula-dashboard-ent/4.cluster-operator/operator/version-upgrade.md).
+  - Support [full backup and full restore](../../nebula-dashboard-ent/4.cluster-operator/cluster-information/backup-and-restore.md) functions.
+  - Support [managing the installation packages](../../nebula-dashboard-ent/system-settings/manage-package.md).
+  - Support using [SQLite database](../../nebula-dashboard-ent/2.deploy-connect-dashboard-ent.md) when deploying the NebulaGraph Dashboard.
 
 - Enhancement
-  - Adapted for Nebula Graph 3.2.0.
+  - Adapted for NebulaGraph 3.2.0.
   - Monitoring
     - Support configuring the monitoring time range globally.
     - Support configuring the monitoring refresh frequency globally.
     - Support monitoring all the disk usages in the cluster.
     - Support displaying all the monitoring metrics of a specified dimension.
   - Alert
-    - Support [muting the alert messages](../../nebula-dashboard-ent/9.alerts.md).
+    - Support [muting the alert messages](../../nebula-dashboard-ent/4.cluster-operator/9.notification.md).
   - Configuration
     - Support modifying the service port in the file `config.yaml`.
     - Support searching the configuration name on the `Update Config` page.

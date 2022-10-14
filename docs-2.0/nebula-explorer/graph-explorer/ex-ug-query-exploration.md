@@ -8,7 +8,7 @@ Select a target graph space before querying data. For more information, see [Cho
 
 !!! compatibility "Legacy version compatibility"
 
-    For versions of Nebula Graph below 3.0.0, you need to create an index before querying data. For more information, see [Create an index](../../3.ngql-guide/14.native-index-statements/1.create-native-index.md).
+    For versions of NebulaGraph below 3.0.0, you need to create an index before querying data. For more information, see [Create an index](../../3.ngql-guide/14.native-index-statements/1.create-native-index.md).
 
 ## Steps
 
@@ -17,6 +17,7 @@ Click the **Start** ![query](https://docs-cdn.nebula-graph.com.cn/figures/nav-qu
 - Query by VID
 - Query by Tag
 - Query Subgraph
+- Query by template
 
 ### Query by VID
 
@@ -55,3 +56,12 @@ When querying subgraphs, you can specify the number of steps, edge types, and th
 The following is an example of VIDs `Kings` and `Suns`, step number `2`, and incoming edge types with a VID value of 101, the number of steps of 4, and edge types of `server` and `like`.
 
 ![tag](https://docs-cdn.nebula-graph.com.cn/figures/query_subgraph.png)
+
+### Query by template
+
+You can select the created nGQL template, and set the parameter value.
+
+- When the returned result is vertices, they will be displayed on the canvas.
+- When the returned result is not vertices, they will be displayed in table format. For example, return player name, age, etc.
+
+For more information, see [nGQL template](../db-management/ngql-template.md).

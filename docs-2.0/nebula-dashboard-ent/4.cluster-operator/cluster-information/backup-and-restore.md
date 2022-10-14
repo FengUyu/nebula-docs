@@ -1,6 +1,6 @@
-# Back up and restore Nebula Graph data 
+# Back up and restore NebulaGraph data
 
-To prevent data loss due to operational errors or system failures, Nebula Graph offers the Backup & Restore (BR) tool to help users back up and restore graph data. Dashboard Enterprise Edition integrates BR capabilities and offers simple UIs that allow users to perform data backup and restore operations in just a few steps. This document describes how to use Dashboard Enterprise Edition to backup and restore Nebula Graph data.
+To prevent data loss due to operational errors or system failures, NebulaGraph offers the Backup & Restore (BR) tool to help users back up and restore graph data. Dashboard Enterprise Edition integrates BR capabilities and offers simple UIs that allow users to perform data backup and restore operations in just a few steps. This document describes how to use Dashboard Enterprise Edition to backup and restore NebulaGraph data.
 
 
 ## Limits
@@ -9,7 +9,7 @@ To prevent data loss due to operational errors or system failures, Nebula Graph 
 
   !!! note
 
-        To back up data to a local device, see [What is Backup & Restore](../../backup-and-restore/nebula-br/1.what-is-br.md).
+        To back up data to a local device, see [What is Backup & Restore](../../../backup-and-restore/nebula-br/1.what-is-br.md).
         
 - Currently, only full backup and full restore of data are supported, and incremental backup and incremental restore are not supported.
 - Backup and restoration of space-level data are not supported.
@@ -19,7 +19,7 @@ To prevent data loss due to operational errors or system failures, Nebula Graph 
 
 ## Prerequisites
 
-- [A cluster is created with Dashboard](../3.create-import-dashboard/1.create-cluster.md).
+- [A cluster is created with Dashboard](../../3.create-import-dashboard/1.create-cluster.md).
 - A cloud storage service that is compatible with the S3 protocol is activated and a storage bucket is created. For details, see the documentation for the corresponding cloud storage service.
   
 ## Steps
@@ -65,7 +65,7 @@ Data is backed up to the cloud storage service by creating a backup file as foll
 
   Environment check includes:
 
-  - Your Nebula Graph cluster is running.
+  - Your NebulaGraph cluster is running.
   - The access key to log onto the storage service has not expired.
   - The status of business traffic. It only checks if the QPS of your business is 0. When QPS is not 0, you are prompted to back up data during off-peak hours.
 
@@ -117,7 +117,7 @@ Follow the steps below to restore data.
 
   Environment check includes:
 
-  - Your Nebula Graph cluster is running.
+  - Your NebulaGraph cluster is running.
   - The access key to log onto the storage service has not expired.
   - No business website traffic. 
   

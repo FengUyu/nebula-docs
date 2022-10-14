@@ -11,7 +11,7 @@ You can use the `BALANCE` statement to balance the distribution of partitions an
 
 !!! enterpriseonly
 
-    Only available for the Nebula Graph Enterprise Edition.
+    Only available for the NebulaGraph Enterprise Edition.
     
 !!! note
 
@@ -30,8 +30,8 @@ After you add new storage hosts into the cluster, no partition is deployed on th
     +-----------------+------+-----------+----------+--------------+-----------------------+------------------------+-------------+
     | Host            | Port | HTTP port | Status   | Leader count | Leader distribution   | Partition distribution | Version     |
     +-----------------+------+-----------+----------+--------------+-----------------------+------------------------+-------------+
-    | "192.168.8.101" | 9779 | 19669     | "ONLINE" | 0            | "No valid partition"  | "No valid partition"   | "3.1.0-ent" |
-    | "192.168.8.100" | 9779 | 19669     | "ONLINE" | 15           | "basketballplayer:15" | "basketballplayer:15"  | "3.1.0-ent" |
+    | "192.168.8.101" | 9779 | 19779     | "ONLINE" | 0            | "No valid partition"  | "No valid partition"   | "3.1.0-ent" |
+    | "192.168.8.100" | 9779 | 19779     | "ONLINE" | 15           | "basketballplayer:15" | "basketballplayer:15"  | "3.1.0-ent" |
     +-----------------+------+-----------+----------+--------------+-----------------------+------------------------+-------------+
     ```
 
@@ -77,12 +77,12 @@ After you add new storage hosts into the cluster, no partition is deployed on th
   +-----------------+------+-----------+----------+--------------+----------------------+------------------------+-------------+
   | Host            | Port | HTTP port | Status   | Leader count | Leader distribution  | Partition distribution | Version     |
   +-----------------+------+-----------+----------+--------------+----------------------+------------------------+-------------+
-  | "192.168.8.101" | 9779 | 19669     | "ONLINE" | 7            | "basketballplayer:7" | "basketballplayer:7"   | "3.1.0-ent" |
-  | "192.168.8.100" | 9779 | 19669     | "ONLINE" | 8            | "basketballplayer:8" | "basketballplayer:8"   | "3.1.0-ent" |
+  | "192.168.8.101" | 9779 | 19779     | "ONLINE" | 7            | "basketballplayer:7" | "basketballplayer:7"   | "3.1.0-ent" |
+  | "192.168.8.100" | 9779 | 19779     | "ONLINE" | 8            | "basketballplayer:8" | "basketballplayer:8"   | "3.1.0-ent" |
   +-----------------+------+-----------+----------+--------------+----------------------+------------------------+-------------+
   ```
 
-If any subtask fails, run `RECOVER JOB <job_id>` to recover the failed jobs. If redoing load balancing does not solve the problem, ask for help in the [Nebula Graph community](https://discuss.nebula-graph.io/).
+If any subtask fails, run `RECOVER JOB <job_id>` to recover the failed jobs. If redoing load balancing does not solve the problem, ask for help in the [NebulaGraph community](https://discuss.nebula-graph.io/).
 
 ### Stop data balancing
 
@@ -104,7 +104,7 @@ To restore a balance job in the `FAILED` or `STOPPED` status, run `RECOVER JOB <
 
 !!! note
 
-    For a `STOPPED` `BALANCE DATA` job, Nebula Graph detects whether the same type of `FAILED` jobs or `FINISHED` jobs have been created since the start time of the job. If so, the `STOPPED` job cannot be restored. For example, if chronologically there are STOPPED job1, FINISHED job2, and STOPPED Job3, only job3 can be restored, and job1 cannot.
+    For a `STOPPED` `BALANCE DATA` job, NebulaGraph detects whether the same type of `FAILED` jobs or `FINISHED` jobs have been created since the start time of the job. If so, the `STOPPED` job cannot be restored. For example, if chronologically there are STOPPED job1, FINISHED job2, and STOPPED Job3, only job3 can be restored, and job1 cannot.
 
 ### Migrate partition
 
@@ -118,8 +118,8 @@ nebula> SHOW HOSTS;
 +-----------------+------+-----------+----------+--------------+-----------------------+------------------------+-------------+
 | Host            | Port | HTTP port | Status   | Leader count | Leader distribution   | Partition distribution | Version     |
 +-----------------+------+-----------+----------+--------------+-----------------------+------------------------+-------------+
-| "192.168.8.101" | 9779 | 19669     | "ONLINE" | 15           | "basketballplayer:15" | "basketballplayer:15"  | "3.1.0-ent" |
-| "192.168.8.100" | 9779 | 19669     | "ONLINE" | 0            | "No valid partition"  | "No valid partition"   | "3.1.0-ent" |
+| "192.168.8.101" | 9779 | 19779     | "ONLINE" | 15           | "basketballplayer:15" | "basketballplayer:15"  | "3.1.0-ent" |
+| "192.168.8.100" | 9779 | 19779     | "ONLINE" | 0            | "No valid partition"  | "No valid partition"   | "3.1.0-ent" |
 +-----------------+------+-----------+----------+--------------+-----------------------+------------------------+-------------+
 ```
 
@@ -127,7 +127,7 @@ nebula> SHOW HOSTS;
 
     This command migrates partitions to other storage hosts but does not delete the current storage host from the cluster. To delete the Storage hosts from cluster, see [Manage Storage hosts](../4.deployment-and-installation/manage-storage-host.md).
 
-/* balance-3.1
+<!-- 下面是注释内容
 !!! danger
 
     The `BALANCE` commands migrates data and balances the distribution of partitions by creating and executing a set of subtasks. **DO NOT** stop any machine in the cluster or change its IP address until all the subtasks finish. Otherwise, the follow-up subtasks fail.
@@ -153,12 +153,12 @@ After you add new storage hosts into the zone, no partition is deployed on the n
   +------------------+------+-----------+----------+--------------+-----------------------------------+------------------------+---------+
   | Host             | Port | HTTP port | Status   | Leader count | Leader distribution               | Partition distribution | Version |
   +------------------+------+-----------+----------+--------------+-----------------------------------+------------------------+---------+
-  | "192.168.10.100" | 9779 | 19669     | "ONLINE" | 4            | "basketballplayer:4"              | "basketballplayer:15"  | "3.1.0" |
-  | "192.168.10.101" | 9779 | 19669     | "ONLINE" | 8            | "basketballplayer:8"              | "basketballplayer:15"  | "3.1.0" |
-  | "192.168.10.102" | 9779 | 19669     | "ONLINE" | 3            | "basketballplayer:3"              | "basketballplayer:15"  | "3.1.0" |
-  | "192.168.10.103" | 9779 | 19669     | "ONLINE" | 0            | "No valid partition"              | "No valid partition"   | "3.1.0" |
-  | "192.168.10.104" | 9779 | 19669     | "ONLINE" | 0            | "No valid partition"              | "No valid partition"   | "3.1.0" |
-  | "192.168.10.105" | 9779 | 19669     | "ONLINE" | 0            | "No valid partition"              | "No valid partition"   | "3.1.0" |
+  | "192.168.10.100" | 9779 | 19779     | "ONLINE" | 4            | "basketballplayer:4"              | "basketballplayer:15"  | "3.1.0" |
+  | "192.168.10.101" | 9779 | 19779     | "ONLINE" | 8            | "basketballplayer:8"              | "basketballplayer:15"  | "3.1.0" |
+  | "192.168.10.102" | 9779 | 19779     | "ONLINE" | 3            | "basketballplayer:3"              | "basketballplayer:15"  | "3.1.0" |
+  | "192.168.10.103" | 9779 | 19779     | "ONLINE" | 0            | "No valid partition"              | "No valid partition"   | "3.1.0" |
+  | "192.168.10.104" | 9779 | 19779     | "ONLINE" | 0            | "No valid partition"              | "No valid partition"   | "3.1.0" |
+  | "192.168.10.105" | 9779 | 19779     | "ONLINE" | 0            | "No valid partition"              | "No valid partition"   | "3.1.0" |
   +------------------+------+-----------+----------+--------------+-----------------------------------+------------------------+---------+
   ```
 
@@ -200,16 +200,16 @@ After you add new storage hosts into the zone, no partition is deployed on the n
   +------------------+------+-----------+----------+--------------+-----------------------------------+------------------------+---------+
   | Host             | Port | HTTP port | Status   | Leader count | Leader distribution               | Partition distribution | Version |
   +------------------+------+-----------+----------+--------------+-----------------------------------+------------------------+---------+
-  | "192.168.10.100" | 9779 | 19669     | "ONLINE" | 4            | "basketballplayer:4"              | "basketballplayer:8"   | "3.1.0" |
-  | "192.168.10.101" | 9779 | 19669     | "ONLINE" | 8            | "basketballplayer:8"              | "basketballplayer:8"   | "3.1.0" |
-  | "192.168.10.102" | 9779 | 19669     | "ONLINE" | 3            | "basketballplayer:3"              | "basketballplayer:8"   | "3.1.0" |
-  | "192.168.10.103" | 9779 | 19669     | "ONLINE" | 0            | "No valid partition"              | "basketballplayer:7"   | "3.1.0" |
-  | "192.168.10.104" | 9779 | 19669     | "ONLINE" | 0            | "No valid partition"              | "basketballplayer:7"   | "3.1.0" |
-  | "192.168.10.105" | 9779 | 19669     | "ONLINE" | 0            | "No valid partition"              | "basketballplayer:7"   | "3.1.0" |
+  | "192.168.10.100" | 9779 | 19779     | "ONLINE" | 4            | "basketballplayer:4"              | "basketballplayer:8"   | "3.1.0" |
+  | "192.168.10.101" | 9779 | 19779     | "ONLINE" | 8            | "basketballplayer:8"              | "basketballplayer:8"   | "3.1.0" |
+  | "192.168.10.102" | 9779 | 19779     | "ONLINE" | 3            | "basketballplayer:3"              | "basketballplayer:8"   | "3.1.0" |
+  | "192.168.10.103" | 9779 | 19779     | "ONLINE" | 0            | "No valid partition"              | "basketballplayer:7"   | "3.1.0" |
+  | "192.168.10.104" | 9779 | 19779     | "ONLINE" | 0            | "No valid partition"              | "basketballplayer:7"   | "3.1.0" |
+  | "192.168.10.105" | 9779 | 19779     | "ONLINE" | 0            | "No valid partition"              | "basketballplayer:7"   | "3.1.0" |
   +------------------+------+-----------+----------+--------------+-----------------------------------+------------------------+---------+
   ```
 
-If any subtask fails, run [`RECOVER JOB <job_id>`](../synchronization-and-migration/2.balance-syntax.md) to restart the balancing. If redoing load balancing does not solve the problem, ask for help in the [Nebula Graph community](https://discuss.nebula-graph.io/).
+If any subtask fails, run [`RECOVER JOB <job_id>`](../synchronization-and-migration/2.balance-syntax.md) to restart the balancing. If redoing load balancing does not solve the problem, ask for help in the [NebulaGraph community](https://discuss.nebula-graph.io/).
 
 ## Stop data balancing
 
@@ -250,7 +250,7 @@ To remove the following storage servers.
   ```ngql
   nebula> DROP HOSTS 192.168.10.104:9779,192.168.10.105:9779;
   ```
-*/
+-->
 
 {{ ent.ent_end }}
 
@@ -271,15 +271,15 @@ nebula> SHOW HOSTS;
 +------------------+------+-----------+----------+--------------+-----------------------------------+------------------------+---------+
 | Host             | Port | HTTP port | Status   | Leader count | Leader distribution               | Partition distribution | Version |
 +------------------+------+-----------+----------+--------------+-----------------------------------+------------------------+---------+
-| "192.168.10.100" | 9779 | 19669     | "ONLINE" | 4            | "basketballplayer:3"              | "basketballplayer:8"   | "3.1.0" |
-| "192.168.10.101" | 9779 | 19669     | "ONLINE" | 8            | "basketballplayer:3"              | "basketballplayer:8"   | "3.1.0" |
-| "192.168.10.102" | 9779 | 19669     | "ONLINE" | 3            | "basketballplayer:3"              | "basketballplayer:8"   | "3.1.0" |
-| "192.168.10.103" | 9779 | 19669     | "ONLINE" | 0            | "basketballplayer:2"              | "basketballplayer:7"   | "3.1.0" |
-| "192.168.10.104" | 9779 | 19669     | "ONLINE" | 0            | "basketballplayer:2"              | "basketballplayer:7"   | "3.1.0" |
-| "192.168.10.105" | 9779 | 19669     | "ONLINE" | 0            | "basketballplayer:2"              | "basketballplayer:7"   | "3.1.0" |
+| "192.168.10.100" | 9779 | 19779     | "ONLINE" | 4            | "basketballplayer:3"              | "basketballplayer:8"   | "3.1.0" |
+| "192.168.10.101" | 9779 | 19779     | "ONLINE" | 8            | "basketballplayer:3"              | "basketballplayer:8"   | "3.1.0" |
+| "192.168.10.102" | 9779 | 19779     | "ONLINE" | 3            | "basketballplayer:3"              | "basketballplayer:8"   | "3.1.0" |
+| "192.168.10.103" | 9779 | 19779     | "ONLINE" | 0            | "basketballplayer:2"              | "basketballplayer:7"   | "3.1.0" |
+| "192.168.10.104" | 9779 | 19779     | "ONLINE" | 0            | "basketballplayer:2"              | "basketballplayer:7"   | "3.1.0" |
+| "192.168.10.105" | 9779 | 19779     | "ONLINE" | 0            | "basketballplayer:2"              | "basketballplayer:7"   | "3.1.0" |
 +------------------+------+-----------+----------+--------------+-----------------------------------+------------------------+---------+
 ```
 
 !!! caution
 
-    In Nebula Graph {{ nebula.release }}, switching leaders will cause a large number of short-term request errors (Storage Error `E_RPC_FAILURE`). For solutions, see [FAQ](../20.appendix/0.FAQ.md).
+    In NebulaGraph {{ nebula.release }}, switching leaders will cause a large number of short-term request errors (Storage Error `E_RPC_FAILURE`). For solutions, see [FAQ](../20.appendix/0.FAQ.md).

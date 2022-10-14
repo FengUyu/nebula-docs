@@ -1,14 +1,14 @@
 # Manage Storage hosts
 
-Starting from Nebula Graph 3.0.0, setting Storage hosts in the configuration files only registers the hosts on the Meta side, but does not add them into the cluster. You must run the `ADD HOSTS` statement to add the Storage hosts.
+Starting from NebulaGraph 3.0.0, setting Storage hosts in the configuration files only registers the hosts on the Meta side, but does not add them into the cluster. You must run the `ADD HOSTS` statement to add the Storage hosts.
 
 !!! note
 
-    Nebula Graph Cloud clusters add Storage hosts automatically. Cloud users do not need to manually run `ADD HOSTS`.
+    NebulaGraph Cloud clusters add Storage hosts automatically. Cloud users do not need to manually run `ADD HOSTS`.
 
 ## Add Storage hosts
 
-Add the Storage hosts to a Nebula Graph cluster.
+Add the Storage hosts to a NebulaGraph cluster.
 
 ```ngql
 ADD HOSTS <ip>:<port> [,<ip>:<port> ...];
@@ -22,6 +22,8 @@ ADD HOSTS "<hostname>":<port> [,"<hostname>":<port> ...];
     - Make sure that the IP address and port number are the same as those in the configuration file. For example, the default IP address and port number in standalone deployment are `127.0.0.1:9779`.
 
     - When using a domain name, enclose it in quotation marks, for example, `ADD HOSTS "foo-bar":9779`.
+
+    - Ensure that the storage host to be added is not used by any other cluster, otherwise, the storage adding operation will fail.
 
 ## Drop Storage hosts
 
