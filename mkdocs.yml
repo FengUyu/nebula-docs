@@ -60,7 +60,7 @@ markdown_extensions:
 
 # Plugins
 plugins:
-  - search
+  - search # 这个是原有的 mkdocs 搜索插件， 如果想使用algolia搜索，请注释掉这个插件
   - macros:
       include_dir: docs-2.0/reuse/
   - git-revision-date-localized
@@ -87,6 +87,7 @@ plugins:
 #        - 20.appendix/release-notes/nebula-ent-release-note.md
 #        - nebula-dashboard-ent/4.cluster-operator/operator/scale.md
 #        - backup-and-restore/nebula-br-ent/*
+#        - 6.monitor-and-metrics/3.bbox/*
         # end
 # Exclude the file with the following file name.
 #        - abc.md
@@ -118,6 +119,7 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - js/hotjar.js
+  - https://www-cdn.nebula-graph.io/nebula-docs/nebula-docs.7e772ed81c779cacbefc.js
 
 extra:
   # Language selector.
@@ -128,7 +130,7 @@ extra:
 
   analytics:
     provider: google
-    property: UA-60523578-5
+    property: UA-60523578-16
   # branch represents code names (git clone). release represents version number used in texts.
   version:
     method: mike
@@ -247,6 +249,10 @@ extra:
     release: 3.2.0
     branch: release-3.2
     tag: v3.2.0
+  bbox:
+    release: 3.3.0
+    branch: release-3.3
+    tag: v3.3.0  
   cloud:
     azureRelease: 3.1.1 # The latest core version that Azure Cloud is compatible with
     aliyunRelease: 3.1.1 # The latest core version that Alibaba Cloud is compatible with
@@ -466,6 +472,11 @@ nav:
   - Monitor and metrics:
       - Query NebulaGraph metrics: 6.monitor-and-metrics/1.query-performance-metrics.md
       - RocksDB Statistics: 6.monitor-and-metrics/2.rocksdb-statistics.md
+#ent
+      - Black-box monitoring:
+        - What is black-box monitoring: 6.monitor-and-metrics/3.bbox/3.1.bbox.md
+        - Black-box monitoring tool: 6.monitor-and-metrics/3.bbox/3.2.bbox-reviewer.md
+ 
   - Data security:
       - Authentication and authorization:
           - Authentication: 7.data-security/1.authentication/1.authentication.md
@@ -569,6 +580,7 @@ nav:
         - Information: 
           - Information overview: nebula-dashboard-ent/4.cluster-operator/cluster-information/overview-info.md
           - Cluster diagnostics: nebula-dashboard-ent/4.cluster-operator/cluster-information/cluster-diagnosis.md
+          - Job management: nebula-dashboard-ent/4.cluster-operator/cluster-information/job-management.md
           - Backup and restore: nebula-dashboard-ent/4.cluster-operator/cluster-information/backup-and-restore.md
         - Operation: 
           - Node: nebula-dashboard-ent/4.cluster-operator/operator/node.md
@@ -598,10 +610,12 @@ nav:
       - NebulaGraph Explorer License: nebula-explorer/deploy-connect/3.explorer-license.md
     - Page overview: nebula-explorer/ex-ug-page-overview.md
     - Database management:
+      - Schema drafting: nebula-explorer/db-management/draft.md
       - Schema management: nebula-explorer/db-management/10.create-schema.md
       - Data import: nebula-explorer/db-management/11.import-data.md
       - Console: nebula-explorer/db-management/explorer-console.md
       - nGQL template: nebula-explorer/db-management/ngql-template.md
+      - Database user management: nebula-explorer/db-management/dbuser_management.md
     - Graph explorer:
       - Choose graph space: nebula-explorer/graph-explorer/13.choose-graphspace.md
       - Start querying: nebula-explorer/graph-explorer/ex-ug-query-exploration.md
@@ -628,7 +642,7 @@ nav:
         - Query details for a specified job: nebula-explorer/workflow/workflow-api/api-desc-job.md
         - Cancel a running job: nebula-explorer/workflow/workflow-api/api-cancel-job.md
         - Get the result data of a specified task: nebula-explorer/workflow/workflow-api/api-desc-task.md
-
+    - Inline frame: nebula-explorer/iframe.md
     - Basic operations and shortcuts: nebula-explorer/ex-ug-shortcuts.md
 
   - NebulaGraph Importer:

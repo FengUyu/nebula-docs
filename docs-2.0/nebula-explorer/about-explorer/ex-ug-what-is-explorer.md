@@ -21,7 +21,7 @@ You can use Explorer in one of these scenarios:
 
 Explorer has these features:
 
-- [Easy to use](../deploy-connect/ex-ug-deploy.md): Explorer can be deployed in simple steps. And 
+- [Easy to use](../deploy-connect/ex-ug-deploy.md): Explorer can be deployed in simple steps.
 
 - [User-friendly](../12.query-visually.md): Explorer uses simple visual interaction, no need to conceive nGQL sentences, easy to realize graph exploration.
 
@@ -32,6 +32,8 @@ Explorer has these features:
 - [Various display](../canvas-operations/canvas-overview.md): Explorer supports modifying the color and icon of the vertex in the canvas to highlight key nodes. Data can also be displayed in different modes.
 
 - [Data storage](../canvas-operations/canvas-snapshot.md): Data on a canvas can be stored and exported.
+
+- [Inline frame](../nebula-explorer/iframe.md): Explorer supports embedding the canvas in third-party pages.
 
 ## Authentication
 
