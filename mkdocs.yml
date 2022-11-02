@@ -670,6 +670,7 @@ nav:
       - Import data from MaxCompute: nebula-exchange/use-exchange/ex-ug-import-from-maxcompute.md
       - Import data from Pulsar: nebula-exchange/use-exchange/ex-ug-import-from-pulsar.md
       - Import data from Kafka: nebula-exchange/use-exchange/ex-ug-import-from-kafka.md
+      - Import data from JDBC: nebula-exchange/use-exchange/ex-ug-import-from-jdbc.md
       - Import data from SST files: nebula-exchange/use-exchange/ex-ug-import-from-sst.md
       - Export data from NebulaGraph: nebula-exchange/use-exchange/ex-ug-export-from-nebula.md
     - Exchange FAQ: nebula-exchange/ex-ug-FAQ.md
@@ -693,13 +694,9 @@ nav:
   - Graph computing:
 
     - Algorithm overview: graph-computing/algorithm-description.md
-
     - NebulaGraph Algorithm: graph-computing/nebula-algorithm.md
-
-#ent
     - NebulaGraph Analytics: graph-computing/nebula-analytics.md
-
-#ent
+    - NebulaGraph Analytics License: graph-computing/analytics-ent-license.md
     - NebulaGraph Explorer workflow: graph-computing/use-explorer.md
 
   - NebulaGraph Spark Connector: nebula-spark-connector.md

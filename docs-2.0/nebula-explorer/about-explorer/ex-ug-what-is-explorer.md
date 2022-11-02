@@ -4,7 +4,7 @@ NebulaGraph Explorer (Explorer in short) is a browser-based visualization tool. 
 
 !!! enterpriseonly
 
-    To apply for the NebulaGraph Explorer installation package, send mail at `inquiry@vesoft.com`. 
+    To apply for the NebulaGraph Explorer installation package, [contact us](https://www.nebula-graph.io/contact). 
 
 !!! Note
 
@@ -33,7 +33,7 @@ Explorer has these features:
 
 - [Data storage](../canvas-operations/canvas-snapshot.md): Data on a canvas can be stored and exported.
 
-- [Inline frame](../nebula-explorer/iframe.md): Explorer supports embedding the canvas in third-party pages.
+- [Inline frame](../iframe.md): Explorer supports embedding the canvas on third-party pages.
 
 ## Authentication
 
