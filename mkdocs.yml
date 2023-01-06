@@ -9,7 +9,7 @@ repo_url: 'https://github.com/vesoft-inc/nebula-docs'
 copyright: Copyright &copy; 2022 NebulaGraph
 
 # modify
-edit_uri: 'edit/master/docs-2.0/'
+edit_uri: 'https://github.com/vesoft-inc/nebula-docs/edit/master/docs-2.0/'
 
 theme:
     name: material
@@ -538,7 +538,6 @@ nav:
       - Limitations: nebula-studio/about-studio/st-ug-limitations.md
     - Deploy and connect:
       - Deploy Studio: nebula-studio/deploy-connect/st-ug-deploy.md
-      - Deploy Studio with Helm: nebula-studio/deploy-connect/st-ug-deploy-by-helm.md
       - Connect to NebulaGraph: nebula-studio/deploy-connect/st-ug-connect.md
     - Quick start:
       - Design a schema: nebula-studio/quick-start/st-ug-plan-schema.md
@@ -578,7 +577,6 @@ nav:
           - Information overview: nebula-dashboard-ent/4.cluster-operator/cluster-information/overview-info.md
           - Cluster diagnostics: nebula-dashboard-ent/4.cluster-operator/cluster-information/cluster-diagnosis.md
 #          - Job management: nebula-dashboard-ent/4.cluster-operator/cluster-information/job-management.md
-          - Backup and restore: nebula-dashboard-ent/4.cluster-operator/cluster-information/backup-and-restore.md
         - Operation: 
           - Node: nebula-dashboard-ent/4.cluster-operator/operator/node.md
           - Scale: nebula-dashboard-ent/4.cluster-operator/operator/scale.md
@@ -586,6 +584,7 @@ nav:
           - Update config: nebula-dashboard-ent/4.cluster-operator/operator/update-config.md
           - Member management: nebula-dashboard-ent/4.cluster-operator/operator/member-management.md
           - Version upgrade: nebula-dashboard-ent/4.cluster-operator/operator/version-upgrade.md
+          - Backup and restore: nebula-dashboard-ent/4.cluster-operator/operator/backup-and-restore.md
         - Operation records: nebula-dashboard-ent/4.cluster-operator/5.operation-record.md
         - Other settings: nebula-dashboard-ent/4.cluster-operator/6.settings.md
       - Authority management: nebula-dashboard-ent/5.account-management.md
@@ -595,7 +594,6 @@ nav:
         - Notification endpoint: nebula-dashboard-ent/system-settings/notification-endpoint.md
         - Single sign-on: nebula-dashboard-ent/system-settings/single-sign-on.md
         - Package management: nebula-dashboard-ent/system-settings/manage-package.md
-        - Other settings: nebula-dashboard-ent/system-settings/other-settings.md
       - Monitoring metrics: nebula-dashboard-ent/7.monitor-parameter.md
       - FAQ: nebula-dashboard-ent/8.faq.md
 
