@@ -63,7 +63,7 @@ markdown_extensions:
 
 # Plugins
 plugins:
-#  - search # 这个是原有的 mkdocs 搜索插件， 如果想使用algolia搜索，请注释掉这个插件
+  - search # 这个是原有的 mkdocs 搜索插件， 如果想使用algolia搜索，请注释掉这个插件
   - macros:
       include_dir: docs-2.0/reuse/
   - git-revision-date-localized
@@ -340,8 +340,6 @@ nav:
           - Conditional expressions: 3.ngql-guide/6.functions-and-expressions/5.conditional-expressions.md
           - Predicate functions: 3.ngql-guide/6.functions-and-expressions/8.predicate.md
           - Geography functions: 3.ngql-guide/6.functions-and-expressions/14.geo.md
-#ent
-          - Elasticsearch functions: 3.ngql-guide/6.functions-and-expressions/17.ES-function.md
           - User-defined functions: 3.ngql-guide/6.functions-and-expressions/9.user-defined-functions.md
 
       - General queries statements:
@@ -463,8 +461,10 @@ nav:
       - Manage Storage host: 4.deployment-and-installation/manage-storage-host.md
 #      - Manage zone: 4.deployment-and-installation/5.zone.md
       - Upgrade:
-          - Upgrade NebulaGraph to the latest version: 4.deployment-and-installation/3.upgrade-nebula-graph/upgrade-nebula-graph-to-latest.md
-          - Upgrade NebulaGraph from v3.x to the current version: 4.deployment-and-installation/3.upgrade-nebula-graph/upgrade-nebula-from-300-to-latest.md
+          - Upgrade NebulaGraph from v2.x to v3.4 (Community Edition): 4.deployment-and-installation/3.upgrade-nebula-graph/upgrade-nebula-graph-to-latest.md
+          - Upgrade NebulaGraph from v3.x to v3.4 (Community Edition): 4.deployment-and-installation/3.upgrade-nebula-graph/upgrade-nebula-from-300-to-latest.md
+#ent
+          - Upgrade NebulaGraph from v3.x to v3.4 (Enterprise Edition): 4.deployment-and-installation/3.upgrade-nebula-graph/upgrade-nebula-ent-from-3.x-3.4.md
       - Uninstall NebulaGraph: 4.deployment-and-installation/4.uninstall-nebula-graph.md
 
   - Configurations and logs:
@@ -522,6 +522,7 @@ nav:
     - System design suggestions: 8.service-tuning/3.system-design.md
     - Execution plan: 8.service-tuning/4.plan.md
     - Processing super vertices: 8.service-tuning/super-node.md
+    - Enable AutoFDO: 8.service-tuning/enable_autofdo_for_nebulagraph.md
     - Best practices: 8.service-tuning/practice.md
 
   - Client:
